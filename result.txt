@@ -1,0 +1,1533 @@
+ython3.7 vvmax.py FLARE2019
+IP     Op   Len  Name              Args
+------------------------------------------------------------------------------------------------------
+0x0000 0x00 0x01 vm_ins_00_init           r0-31, 0
+0x0001 0x11 0x22 vm_ins_11_vmovdqu        r0, b'0000000000000000000000000000000000000000000000393130324552414c46'
+0x0023 0x11 0x22 vm_ins_11_vmovdqu        r1, UNKNOWN
+0x0045 0x11 0x22 vm_ins_11_vmovdqu        r3, b'1a1b1b1b1a13111111111111111111151a1b1b1b1a1311111111111111111115'
+0x0067 0x11 0x22 vm_ins_11_vmovdqu        r4, b'1010101010101010080408040201101010101010101010100804080402011010'
+0x0089 0x11 0x22 vm_ins_11_vmovdqu        r5, b'0000000000000000b9b9bfbf041310000000000000000000b9b9bfbf04131000'
+0x00AB 0x11 0x22 vm_ins_11_vmovdqu        r6, b'2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f'
+0x00CD 0x11 0x22 vm_ins_11_vmovdqu        r10, b'0140014001400140014001400140014001400140014001400140014001400140'
+0x00EF 0x11 0x22 vm_ins_11_vmovdqu        r11, b'0001100000011000000110000001100000011000000110000001100000011000'
+0x0111 0x11 0x22 vm_ins_11_vmovdqu        r12, b'ffffffff0c0d0e08090a040506000102ffffffff0c0d0e08090a040506000102'
+0x0133 0x11 0x22 vm_ins_11_vmovdqu        r13, b'ffffffffffffffff000000060000000500000004000000020000000100000000'
+0x0155 0x11 0x22 vm_ins_11_vmovdqu        r16, b'ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+0x0177 0x11 0x22 vm_ins_11_vmovdqu        r17, b'6a09e667bb67ae853c6ef372a54ff53a510e527f9b05688c1f83d9ab5be0cd19'
+0x0199 0x11 0x22 vm_ins_11_vmovdqu        r18, b'428a2f9871374491b5c0fbcfe9b5dba53956c25b59f111f1923f82a4ab1c5ed5'
+0x01BB 0x11 0x22 vm_ins_11_vmovdqu        r19, b'0000000300000002000000010000000000000007000000060000000500000004'
+0x01DD 0x11 0x22 vm_ins_11_vmovdqu        r20, b'0000000000000000000000000000000000000000000000000000000000000000'
+0x01FF 0x11 0x22 vm_ins_11_vmovdqu        r21, b'0000000100000001000000010000000100000001000000010000000100000001'
+0x0221 0x11 0x22 vm_ins_11_vmovdqu        r22, b'0000000200000002000000020000000200000002000000020000000200000002'
+0x0243 0x11 0x22 vm_ins_11_vmovdqu        r23, b'0000000300000003000000030000000300000003000000030000000300000003'
+0x0265 0x11 0x22 vm_ins_11_vmovdqu        r24, b'0000000400000004000000040000000400000004000000040000000400000004'
+0x0287 0x11 0x22 vm_ins_11_vmovdqu        r25, b'0000000500000005000000050000000500000005000000050000000500000005'
+0x02A9 0x11 0x22 vm_ins_11_vmovdqu        r26, b'0000000600000006000000060000000600000006000000060000000600000006'
+0x02CB 0x11 0x22 vm_ins_11_vmovdqu        r27, b'0000000700000007000000070000000700000007000000070000000700000007'
+0x02ED 0x15 0x04 vm_ins_15_vpermd         r20, r0, r20
+0x02F1 0x15 0x04 vm_ins_15_vpermd         r21, r0, r21
+0x02F5 0x15 0x04 vm_ins_15_vpermd         r22, r0, r22
+0x02F9 0x15 0x04 vm_ins_15_vpermd         r23, r0, r23
+0x02FD 0x15 0x04 vm_ins_15_vpermd         r24, r0, r24
+0x0301 0x15 0x04 vm_ins_15_vpermd         r25, r0, r25
+0x0305 0x15 0x04 vm_ins_15_vpermd         r26, r0, r26
+0x0309 0x15 0x04 vm_ins_15_vpermd         r27, r0, r27
+0x030D 0x12 0x04 vm_ins_12_vpsrld         r7, r1, 4
+0x0311 0x03 0x04 vm_ins_03_vpxor          r28, r20, r21
+0x0315 0x03 0x04 vm_ins_03_vpxor          r28, r28, r22
+0x0319 0x03 0x04 vm_ins_03_vpxor          r28, r28, r23
+0x031D 0x03 0x04 vm_ins_03_vpxor          r28, r28, r24
+0x0321 0x03 0x04 vm_ins_03_vpxor          r28, r28, r25
+0x0325 0x03 0x04 vm_ins_03_vpxor          r28, r28, r26
+0x0329 0x03 0x04 vm_ins_03_vpxor          r28, r28, r27
+0x032D 0x05 0x04 vm_ins_05_vpand          r7, r7, r6
+0x0331 0x13 0x04 vm_ins_13_vpslld         r29, r17, 7
+0x0335 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 25
+0x0339 0x04 0x04 vm_ins_04_vpor           r15, r29, r30
+0x033D 0x16 0x04 vm_ins_16_vpcmpeqb       r8, r1, r6
+0x0341 0x13 0x04 vm_ins_13_vpslld         r29, r17, 21
+0x0345 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 11
+0x0349 0x04 0x04 vm_ins_04_vpor           r29, r29, r30
+0x034D 0x03 0x04 vm_ins_03_vpxor          r15, r15, r29
+0x0351 0x16 0x04 vm_ins_16_vpcmpeqb       r8, r1, r6
+0x0355 0x13 0x04 vm_ins_13_vpslld         r29, r17, 26
+0x0359 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 6
+0x035D 0x04 0x04 vm_ins_04_vpor           r29, r29, r30
+0x0361 0x03 0x04 vm_ins_03_vpxor          r15, r15, r29
+0x0365 0x03 0x04 vm_ins_03_vpxor          r29, r20, r16
+0x0369 0x05 0x04 vm_ins_05_vpand          r30, r20, r18
+0x036D 0x03 0x04 vm_ins_03_vpxor          r29, r29, r30
+0x0371 0x0B 0x04 vm_ins_0B_vpaddd         r15, r29, r15
+0x0375 0x0B 0x04 vm_ins_0B_vpaddd         r20, r15, r0
+0x0379 0x07 0x04 vm_ins_07_vpaddb         r7, r8, r7
+0x037D 0x03 0x04 vm_ins_03_vpxor          r29, r20, r28
+0x0381 0x15 0x04 vm_ins_15_vpermd         r17, r29, r19
+0x0385 0x14 0x04 vm_ins_14_vpshufb        r7, r5, r7
+0x0389 0x13 0x04 vm_ins_13_vpslld         r29, r17, 7
+0x038D 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 25
+0x0391 0x04 0x04 vm_ins_04_vpor           r15, r29, r30
+0x0395 0x13 0x04 vm_ins_13_vpslld         r29, r17, 21
+0x0399 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 11
+0x039D 0x04 0x04 vm_ins_04_vpor           r29, r29, r30
+0x03A1 0x03 0x04 vm_ins_03_vpxor          r15, r15, r29
+0x03A5 0x13 0x04 vm_ins_13_vpslld         r29, r17, 26
+0x03A9 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 6
+0x03AD 0x04 0x04 vm_ins_04_vpor           r29, r29, r30
+0x03B1 0x03 0x04 vm_ins_03_vpxor          r15, r15, r29
+0x03B5 0x07 0x04 vm_ins_07_vpaddb         r2, r1, r7
+0x03B9 0x03 0x04 vm_ins_03_vpxor          r29, r21, r16
+0x03BD 0x05 0x04 vm_ins_05_vpand          r30, r21, r18
+0x03C1 0x03 0x04 vm_ins_03_vpxor          r29, r29, r30
+0x03C5 0x0B 0x04 vm_ins_0B_vpaddd         r15, r29, r15
+0x03C9 0x0B 0x04 vm_ins_0B_vpaddd         r21, r15, r0
+0x03CD 0x03 0x04 vm_ins_03_vpxor          r29, r21, r28
+0x03D1 0x15 0x04 vm_ins_15_vpermd         r17, r29, r19
+0x03D5 0x03 0x04 vm_ins_03_vpxor          r20, r20, r21
+0x03D9 0x13 0x04 vm_ins_13_vpslld         r29, r17, 7
+0x03DD 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 25
+0x03E1 0x04 0x04 vm_ins_04_vpor           r15, r29, r30
+0x03E5 0x13 0x04 vm_ins_13_vpslld         r29, r17, 21
+0x03E9 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 11
+0x03ED 0x04 0x04 vm_ins_04_vpor           r29, r29, r30
+0x03F1 0x03 0x04 vm_ins_03_vpxor          r15, r15, r29
+0x03F5 0x13 0x04 vm_ins_13_vpslld         r29, r17, 26
+0x03F9 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 6
+0x03FD 0x04 0x04 vm_ins_04_vpor           r29, r29, r30
+0x0401 0x03 0x04 vm_ins_03_vpxor          r15, r15, r29
+0x0405 0x01 0x04 vm_ins_01_vpmaddubsw     r7, r2, r10
+0x0409 0x03 0x04 vm_ins_03_vpxor          r29, r22, r16
+0x040D 0x05 0x04 vm_ins_05_vpand          r30, r22, r18
+0x0411 0x03 0x04 vm_ins_03_vpxor          r29, r29, r30
+0x0415 0x0B 0x04 vm_ins_0B_vpaddd         r15, r29, r15
+0x0419 0x0B 0x04 vm_ins_0B_vpaddd         r22, r15, r0
+0x041D 0x03 0x04 vm_ins_03_vpxor          r29, r22, r28
+0x0421 0x15 0x04 vm_ins_15_vpermd         r17, r29, r19
+0x0425 0x03 0x04 vm_ins_03_vpxor          r20, r20, r22
+0x0429 0x13 0x04 vm_ins_13_vpslld         r29, r17, 7
+0x042D 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 25
+0x0431 0x04 0x04 vm_ins_04_vpor           r15, r29, r30
+0x0435 0x13 0x04 vm_ins_13_vpslld         r29, r17, 21
+0x0439 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 11
+0x043D 0x04 0x04 vm_ins_04_vpor           r29, r29, r30
+0x0441 0x03 0x04 vm_ins_03_vpxor          r15, r15, r29
+0x0445 0x13 0x04 vm_ins_13_vpslld         r29, r17, 26
+0x0449 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 6
+0x044D 0x04 0x04 vm_ins_04_vpor           r29, r29, r30
+0x0451 0x03 0x04 vm_ins_03_vpxor          r15, r15, r29
+0x0455 0x02 0x04 vm_ins_02_vpmaddwd       r2, r7, r11
+0x0459 0x03 0x04 vm_ins_03_vpxor          r29, r23, r16
+0x045D 0x05 0x04 vm_ins_05_vpand          r30, r23, r18
+0x0461 0x03 0x04 vm_ins_03_vpxor          r29, r29, r30
+0x0465 0x0B 0x04 vm_ins_0B_vpaddd         r15, r29, r15
+0x0469 0x0B 0x04 vm_ins_0B_vpaddd         r23, r15, r0
+0x046D 0x03 0x04 vm_ins_03_vpxor          r29, r23, r28
+0x0471 0x15 0x04 vm_ins_15_vpermd         r17, r29, r19
+0x0475 0x03 0x04 vm_ins_03_vpxor          r20, r20, r23
+0x0479 0x13 0x04 vm_ins_13_vpslld         r29, r17, 7
+0x047D 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 25
+0x0481 0x04 0x04 vm_ins_04_vpor           r15, r29, r30
+0x0485 0x13 0x04 vm_ins_13_vpslld         r29, r17, 21
+0x0489 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 11
+0x048D 0x04 0x04 vm_ins_04_vpor           r29, r29, r30
+0x0491 0x03 0x04 vm_ins_03_vpxor          r15, r15, r29
+0x0495 0x13 0x04 vm_ins_13_vpslld         r29, r17, 26
+0x0499 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 6
+0x049D 0x04 0x04 vm_ins_04_vpor           r29, r29, r30
+0x04A1 0x03 0x04 vm_ins_03_vpxor          r15, r15, r29
+0x04A5 0x03 0x04 vm_ins_03_vpxor          r29, r24, r16
+0x04A9 0x05 0x04 vm_ins_05_vpand          r30, r24, r18
+0x04AD 0x03 0x04 vm_ins_03_vpxor          r29, r29, r30
+0x04B1 0x0B 0x04 vm_ins_0B_vpaddd         r15, r29, r15
+0x04B5 0x0B 0x04 vm_ins_0B_vpaddd         r24, r15, r0
+0x04B9 0x03 0x04 vm_ins_03_vpxor          r29, r24, r28
+0x04BD 0x15 0x04 vm_ins_15_vpermd         r17, r29, r19
+0x04C1 0x03 0x04 vm_ins_03_vpxor          r20, r20, r24
+0x04C5 0x13 0x04 vm_ins_13_vpslld         r29, r17, 7
+0x04C9 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 25
+0x04CD 0x04 0x04 vm_ins_04_vpor           r15, r29, r30
+0x04D1 0x13 0x04 vm_ins_13_vpslld         r29, r17, 21
+0x04D5 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 11
+0x04D9 0x04 0x04 vm_ins_04_vpor           r29, r29, r30
+0x04DD 0x03 0x04 vm_ins_03_vpxor          r15, r15, r29
+0x04E1 0x13 0x04 vm_ins_13_vpslld         r29, r17, 26
+0x04E5 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 6
+0x04E9 0x04 0x04 vm_ins_04_vpor           r29, r29, r30
+0x04ED 0x03 0x04 vm_ins_03_vpxor          r15, r15, r29
+0x04F1 0x03 0x04 vm_ins_03_vpxor          r29, r25, r16
+0x04F5 0x05 0x04 vm_ins_05_vpand          r30, r25, r18
+0x04F9 0x03 0x04 vm_ins_03_vpxor          r29, r29, r30
+0x04FD 0x0B 0x04 vm_ins_0B_vpaddd         r15, r29, r15
+0x0501 0x0B 0x04 vm_ins_0B_vpaddd         r25, r15, r0
+0x0505 0x03 0x04 vm_ins_03_vpxor          r29, r25, r28
+0x0509 0x15 0x04 vm_ins_15_vpermd         r17, r29, r19
+0x050D 0x03 0x04 vm_ins_03_vpxor          r20, r20, r25
+0x0511 0x14 0x04 vm_ins_14_vpshufb        r2, r2, r12
+0x0515 0x13 0x04 vm_ins_13_vpslld         r29, r17, 7
+0x0519 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 25
+0x051D 0x04 0x04 vm_ins_04_vpor           r15, r29, r30
+0x0521 0x13 0x04 vm_ins_13_vpslld         r29, r17, 21
+0x0525 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 11
+0x0529 0x04 0x04 vm_ins_04_vpor           r29, r29, r30
+0x052D 0x03 0x04 vm_ins_03_vpxor          r15, r15, r29
+0x0531 0x13 0x04 vm_ins_13_vpslld         r29, r17, 26
+0x0535 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 6
+0x0539 0x04 0x04 vm_ins_04_vpor           r29, r29, r30
+0x053D 0x03 0x04 vm_ins_03_vpxor          r15, r15, r29
+0x0541 0x03 0x04 vm_ins_03_vpxor          r29, r26, r16
+0x0545 0x05 0x04 vm_ins_05_vpand          r30, r26, r18
+0x0549 0x03 0x04 vm_ins_03_vpxor          r29, r29, r30
+0x054D 0x0B 0x04 vm_ins_0B_vpaddd         r15, r29, r15
+0x0551 0x0B 0x04 vm_ins_0B_vpaddd         r26, r15, r0
+0x0555 0x03 0x04 vm_ins_03_vpxor          r29, r26, r28
+0x0559 0x15 0x04 vm_ins_15_vpermd         r17, r29, r19
+0x055D 0x03 0x04 vm_ins_03_vpxor          r20, r20, r26
+0x0561 0x13 0x04 vm_ins_13_vpslld         r29, r17, 7
+0x0565 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 25
+0x0569 0x04 0x04 vm_ins_04_vpor           r15, r29, r30
+0x056D 0x13 0x04 vm_ins_13_vpslld         r29, r17, 21
+0x0571 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 11
+0x0575 0x04 0x04 vm_ins_04_vpor           r29, r29, r30
+0x0579 0x03 0x04 vm_ins_03_vpxor          r15, r15, r29
+0x057D 0x13 0x04 vm_ins_13_vpslld         r29, r17, 26
+0x0581 0x12 0x04 vm_ins_12_vpsrld         r30, r17, 6
+0x0585 0x04 0x04 vm_ins_04_vpor           r29, r29, r30
+0x0589 0x03 0x04 vm_ins_03_vpxor          r15, r15, r29
+0x058D 0x15 0x04 vm_ins_15_vpermd         r2, r2, r13
+0x0591 0x03 0x04 vm_ins_03_vpxor          r29, r27, r16
+0x0595 0x05 0x04 vm_ins_05_vpand          r30, r27, r18
+0x0599 0x03 0x04 vm_ins_03_vpxor          r29, r29, r30
+0x059D 0x0B 0x04 vm_ins_0B_vpaddd         r15, r29, r15
+0x05A1 0x0B 0x04 vm_ins_0B_vpaddd         r27, r15, r0
+0x05A5 0x03 0x04 vm_ins_03_vpxor          r29, r27, r28
+0x05A9 0x15 0x04 vm_ins_15_vpermd         r17, r29, r19
+0x05AD 0x03 0x04 vm_ins_03_vpxor          r20, r20, r27
+0x05B1 0x11 0x22 vm_ins_11_vmovdqu        r19, b'0000000000000000ffffffffffffffffffffffffffffffffffffffffffffffff'
+0x05D3 0x05 0x04 vm_ins_05_vpand          r20, r20, r19
+0x05D7 0x11 0x22 vm_ins_11_vmovdqu        r31, b'2176620c3a5c0f290b583618734f07102e332623780e59150c05172d4b1b1e22'
+0x05F9 0xFF 0x01 vm_ins_FF_end            ^C
+Constraining arg2 index 0
+Constraining arg2 index 1
+Constraining arg2 index 2
+Constraining arg2 index 3
+Constraining arg2 index 4
+Constraining arg2 index 5
+Constraining arg2 index 6
+Constraining arg2 index 7
+Constraining arg2 index 8
+Constraining arg2 index 9
+Constraining arg2 index 10
+Constraining arg2 index 11
+Constraining arg2 index 12
+Constraining arg2 index 13
+Constraining arg2 index 14
+Constraining arg2 index 15
+Constraining arg2 index 16
+Constraining arg2 index 17
+Constraining arg2 index 18
+Constraining arg2 index 19
+Constraining arg2 index 20
+Constraining arg2 index 21
+Constraining arg2 index 22
+Constraining arg2 index 23
+Constraining arg2 index 24
+Constraining arg2 index 25
+Constraining arg2 index 26
+Constraining arg2 index 27
+Constraining arg2 index 28
+Constraining arg2 index 29
+Constraining arg2 index 30
+Constraining arg2 index 31
+Constraining flag index 0
+Constraining flag index 1
+Constraining flag index 2
+Constraining flag index 3
+Constraining flag index 4
+Constraining flag index 5
+Constraining flag index 6
+Constraining flag index 7
+Constraining flag index 8
+Constraining flag index 9
+Constraining flag index 10
+Constraining flag index 11
+Constraining flag index 12
+Constraining flag index 13
+Constraining flag index 14
+Constraining flag index 15
+Constraining flag index 16
+Constraining flag index 17
+Constraining flag index 18
+Constraining flag index 19
+Constraining flag index 20
+Constraining flag index 21
+Constraining flag index 22
+Constraining flag index 23
+Constraining flag index 24
+Constraining flag index 25
+Constraining flag index 26
+Constraining flag index 27
+Constraining flag index 28
+Constraining flag index 29
+Constraining flag index 30
+Constraining flag index 31
+traversing model...
+0x055D xxxx xxxx vm_ins_03_vpxor_213       = 0x70d026761e45c89cd06b567e1748a2fe6920dddbea52474412539597a62cc3c5
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_099 = 0x1
+0x03C5 xxxx xxxx vm_ins_0B_vpaddd_079      = 0x79333cea0fe39c23252844a163a6b99190a978b0f409aa46008dc2fa49f81f70
+0x0435 xxxx xxxx vm_ins_13_vpslld_139      = 0xe2e000007500000054600000572000000f6000000da00000db20000025000000
+0x052D xxxx xxxx vm_ins_03_vpxor_201       = 0x3fd74855a063fac64628f386133e878d89bc6f00548cce196ddce6fdee0545c7
+0x030D xxxx xxxx vm_ins_12_vpsrld_033      = 0x65453630796d43704611754006794240187179704b451650534841107943486
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_119 = 0x1
+0x046D xxxx xxxx vm_ins_03_vpxor_153       = 0xc1d11b83f99747660dbd73890b8216567058736421f6a79966272caf3994e137
+0x038D xxxx xxxx vm_ins_12_vpsrld_065      = 0x480000007e000000150000002d0000001300000008000000160000005a
+0x0471 xxxx xxxx vm_ins_15_vpermd_154      = 0x7058736421f6a79966272caf3994e137c1d11b83f99747660dbd73890b821656
+0x03F5 xxxx xxxx vm_ins_13_vpslld_091      = 0x2800000014000000140000003000000040000000640000006c000000ac000000
+0x04C9 xxxx xxxx vm_ins_12_vpsrld_176      = 0x7a0000006f0000006f0000006200000059000000070000002c00000029
+0x04BD xxxx xxxx vm_ins_15_vpermd_173      = 0xf483c196dfeba2fbdfafc710c554e159b207a6c00f8156e3589371d9530084b9
+0x02F1 xxxx xxxx vm_ins_15_vpermd_026      = 0x3130324531303245313032453130324531303245313032453130324531303245
+0x02CB xxxx xxxx vm_ins_11_vmovdqu_024     = 0x700000007000000070000000700000007000000070000000700000007
+0x0089 xxxx xxxx vm_ins_11_vmovdqu_007     = 0xb9b9bfbf041310000000000000000000b9b9bfbf04131000
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_095  = 0x11e0f3a09b20c82084501ae0c8600810aa80a72010a05e601d20ac000b20707
+0x0519 xxxx xxxx vm_ins_12_vpsrld_196      = 0x5d00000079000000150000001300000025000000130000000a00000042
+0x058D xxxx xxxx vm_ins_15_vpermd_225      = 0x1ea1f3b229c845e81a861c08a82aa70a615ed201acb27070
+0x0591 xxxx xxxx vm_ins_03_vpxor_226       = 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0x01DD xxxx xxxx vm_ins_11_vmovdqu_017     = 0x0
+0x05AD xxxx xxxx vm_ins_03_vpxor_233       = 0x46fc990a3724ed0e1ea1f3b229c845e81a861c08a82aa70a615ed201acb27070
+0x04AD xxxx xxxx vm_ins_03_vpxor_169       = 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0x04D1 xxxx xxxx vm_ins_13_vpslld_178      = 0x32c000005f600000e20000002b200000d8000000dc6000003b20000097200000
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_113 = 0x1
+0x00EF xxxx xxxx vm_ins_11_vmovdqu_010     = 0x1100000011000000110000001100000011000000110000001100000011000
+0x043D xxxx xxxx vm_ins_04_vpor_141        = 0xe2eb074a750193f55464ed8d573cf6140f6ebc640da83e8adb2e1ab22508a32e
+0x04C1 xxxx xxxx vm_ins_03_vpxor_174       = 0x5902cb21a83d0bba2c6c251ecab72359dcbff849fab09dfb85c91a8ddc1a0898
+0x0199 xxxx xxxx vm_ins_11_vmovdqu_015     = 0x428a2f9871374491b5c0fbcfe9b5dba53956c25b59f111f1923f82a4ab1c5ed5
+0x04B1 xxxx xxxx vm_ins_0B_vpaddd_170      = 0xd176d8fa6cf028d93be20fe33071fa8397f2bfacbc9adc888bae86e553e4531d
+0x044D xxxx xxxx vm_ins_04_vpor_145        = 0x5d60e95ca0327eae8c9db1aae79ec28aedd78c81b507d14165c3565ba11465c4
+0x04A5 xxxx xxxx vm_ins_03_vpxor_167       = 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0x02A9 xxxx xxxx vm_ins_11_vmovdqu_023     = 0x600000006000000060000000600000006000000060000000600000006
+0x037D xxxx xxxx vm_ins_03_vpxor_061       = 0x26046af3103cd6712cbff536b48a790f90f7651cfc3b994e2a906eae5b53c1f9
+0x03FD xxxx xxxx vm_ins_04_vpor_093        = 0x2bcf601a165de351154b322c33fd20564069090b65b24b886d1964eaac035f1e
+0x0355 xxxx xxxx vm_ins_13_vpslld_051      = 0x9c00000014000000c8000000e8000000fc00000030000000ac00000064000000
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_105 = 0x1
+0x03C9 xxxx xxxx vm_ins_0B_vpaddd_080      = 0x79333cea0fe39c23252844a163a6b99190a978b0f409aa7f31bdf53f9c396bb6
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_096 = 0x40
+0x0111 xxxx xxxx vm_ins_11_vmovdqu_011     = 0xffffffff0c0d0e08090a040506000102ffffffff0c0d0e08090a040506000102
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_115 = 0x1
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_118 = 0x40
+0x04FD xxxx xxxx vm_ins_0B_vpaddd_189      = 0x28ec540345d52e0f7686c28ae65d55fad90d3e3590f484f517f1b304f2243eaa
+0x0067 xxxx xxxx vm_ins_11_vmovdqu_006     = 0x1010101010101010080408040201101010101010101010100804080402011010
+0x0401 xxxx xxxx vm_ins_03_vpxor_094       = 0x16925e6322852e8013a4e91426680f2b3b4b294e6feed56212ece26e32809066
+0x0571 xxxx xxxx vm_ins_12_vpsrld_218      = 0x1fc6c001c6ce40017b942000ba447000c49f800121b92001d3e19000b1a75
+0x0509 xxxx xxxx vm_ins_15_vpermd_192      = 0xba7c400ff385fb142a509b732714f4ca4b9d2a3926a4503515f7bcb0852c2bc0
+0x03CD xxxx xxxx vm_ins_03_vpxor_081       = 0x1a4242d06c92e21946593a9b00d7c7abf3d8068a9778d44552cc8b05ff48158c
+0x04B9 xxxx xxxx vm_ins_03_vpxor_172       = 0xb207a6c00f8156e3589371d9530084b9f483c196dfeba2fbdfafc710c554e159
+0x03F9 xxxx xxxx vm_ins_12_vpsrld_092      = 0x3cf601a025de351014b322c03fd20560069090b01b24b88011964ea00035f1e
+0x0421 xxxx xxxx vm_ins_15_vpermd_134      = 0x583a57170c9faba8276c6aa3e7b0a2b975e3207b41f4506d70d596d945197128
+0x0133 xxxx xxxx vm_ins_11_vmovdqu_012     = 0xffffffffffffffff000000060000000500000004000000020000000100000000
+0x0545 xxxx xxxx vm_ins_05_vpand_207       = 0x0
+0x0319 xxxx xxxx vm_ins_03_vpxor_036       = 0x63717e3a63717e3a63717e3a63717e3a63717e3a63717e3a63717e3a63717e3a
+0x0579 xxxx xxxx vm_ins_03_vpxor_220       = 0x421332eb86ecb915683d8d9c63f46fe9ca2ffec90c3b925a027ad66d253e29d9
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_101 = 0x1
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_097 = 0x1
+0x0311 xxxx xxxx vm_ins_03_vpxor_034       = 0x63717e0363717e0363717e0363717e0363717e0363717e0363717e0363717e03
+0x0301 xxxx xxxx vm_ins_15_vpermd_030      = 0x0
+0x03F1 xxxx xxxx vm_ins_03_vpxor_090       = 0x3d5d3e7934d8cdd106efdb3815952f7d7b2220450a5c9eea7ff586849e83cf78
+0x0399 xxxx xxxx vm_ins_12_vpsrld_068      = 0x121eec001f87730005520d000b6a780004c08d0002079a000597fe0016914f
+0x0425 xxxx xxxx vm_ins_03_vpxor_135       = 0x2ad476625e2b1a3f7942274e9235b1b658644abb04ad98993c41f13220da08f6
+0x0569 xxxx xxxx vm_ins_04_vpor_216        = 0xf1b2ce87b390d5f1e50a34de911fcbae27e3b7316e4989c8f867e87469d533ac
+0x0469 xxxx xxxx vm_ins_0B_vpaddd_152      = 0xa2a065b99ae6395c6ecc0db368f3686c13290d5e4287d9a3055652955ae59f0d
+0x0439 xxxx xxxx vm_ins_12_vpsrld_140      = 0xb074a000193f50004ed8d001cf614000ebc6400083e8a000e1ab20008a32e
+0x03A5 xxxx xxxx vm_ins_13_vpslld_071      = 0x7000000038000000b8000000e4000000cc000000c4000000d80000003c000000
+0x0155 xxxx xxxx vm_ins_11_vmovdqu_013     = 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0x03E5 xxxx xxxx vm_ins_13_vpslld_087      = 0xd140000088a0000060a00000b18000005a0000004320000053600000f5600000
+0x05A9 xxxx xxxx vm_ins_15_vpermd_232      = 0x10d7bfe921099e74107c39ac69efcd8f555dc1464a105ba8adbbdbf65df1992c
+0x0321 xxxx xxxx vm_ins_03_vpxor_038       = 0x63717e3a63717e3a63717e3a63717e3a63717e3a63717e3a63717e3a63717e3a
+0x059D xxxx xxxx vm_ins_0B_vpaddd_229      = 0x362cbf7c29612592cecaa5cc3e80e71673a6c1d34278e01541dd1551b85d676f
+_r1_001                                    = 0x65453638796d43794611754706794243187179704b4516585348411b79434863
+0x0585 xxxx xxxx vm_ins_04_vpor_223        = 0x743f8d96af8d9c86a6f728515d7488feb9893f1d4e43724c43a7c33f9d634ea9
+0x05A1 xxxx xxxx vm_ins_0B_vpaddd_230      = 0x362cbf7c29612592cecaa5cc3e80e71673a6c1d34278e04e730d47960a9eb3b5
+0x0515 xxxx xxxx vm_ins_13_vpslld_195      = 0x3e200780c2fd8a00284db9808a7a6500ce951c8052281a80fbde58009615e000
+0x0525 xxxx xxxx vm_ins_12_vpsrld_199      = 0x174f88001e70bf00054a130004e29e000973a50004d48a0002bef70010a585
+0x03A1 xxxx xxxx vm_ins_03_vpxor_070       = 0xd82090a43413200d9df2051896cb96d55c51b91ed0493f12f93f0ce864ca1695
+0x04C5 xxxx xxxx vm_ins_13_vpslld_175      = 0x41e0cb00f5d17d80d7e38800aa70ac8003d36000c0ab718049b8ec8080425c80
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_112 = 0x40
+0x0581 xxxx xxxx vm_ins_12_vpsrld_222      = 0x3f8d96038d9c8602f72851017488fe01893f1d0243724c03a7c33f01634ea9
+0x047D xxxx xxxx vm_ins_12_vpsrld_157      = 0x3800000010000000330000001c000000600000007c0000000600000005
+0x01FF xxxx xxxx vm_ins_11_vmovdqu_018     = 0x100000001000000010000000100000001000000010000000100000001
+0x0221 xxxx xxxx vm_ins_11_vmovdqu_019     = 0x200000002000000020000000200000002000000020000000200000002
+0x0375 xxxx xxxx vm_ins_0B_vpaddd_059      = 0x457514c9734da84b4fce8b0cd7fb0735f3861b269f4ae77449e110943822bfc3
+0x040D xxxx xxxx vm_ins_05_vpand_129       = 0x1800000011000000090000002100000019000000310000002000000011
+0x045D xxxx xxxx vm_ins_05_vpand_149       = 0x0
+0x04DD xxxx xxxx vm_ins_03_vpxor_181       = 0x733e5b02aaaa809b35f87d978148067edbc520ad1cca81ad7293fec217683cb9
+0x03ED xxxx xxxx vm_ins_04_vpor_089        = 0xd15e7b0088b2ef1a60aa5991b19fe9025a034848432d925c5368cb27f5601af8
+0x04D5 xxxx xxxx vm_ins_12_vpsrld_179      = 0x1e9078001bfd74001bf5f80018aa9c001640f40001f02a000b126e000a6010
+0x0325 xxxx xxxx vm_ins_03_vpxor_039       = 0x63717e3a63717e3a63717e3a63717e3a63717e3a63717e3a63717e3a63717e3a
+0x0361 xxxx xxxx vm_ins_03_vpxor_054       = 0x55b65510758db09291cf8f0dea3b0b783587272ba14b334258f12a9236227380
+0x0599 xxxx xxxx vm_ins_03_vpxor_228       = 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0x0415 xxxx xxxx vm_ins_0B_vpaddd_131      = 0x16925e4122852e5713a4e8e326680f123b4b292d6feed55912ece2543280903d
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_107 = 0x1
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_120 = 0x40
+0x0441 xxxx xxxx vm_ins_03_vpxor_142       = 0xffc08ce63ad447f3e251bc1e8f6daae7fefe81def780082ab1e5760aa9b0370c
+0x0451 xxxx xxxx vm_ins_03_vpxor_146       = 0xa2a065ba9ae6395d6ecc0db468f3686d13290d5f4287d96bd426205108a452c8
+0x03C1 xxxx xxxx vm_ins_03_vpxor_078       = 0xcecfefbaffffcdbbffcfffffefffdfbfffdfcffbdfffddfbdeffcfbeefdfdfff
+0x02ED xxxx xxxx vm_ins_15_vpermd_025      = 0x52414c4652414c4652414c4652414c4652414c4652414c4652414c4652414c46
+0x05A5 xxxx xxxx vm_ins_03_vpxor_231       = 0x555dc1464a105ba8adbbdbf65df1992c10d7bfe921099e74107c39ac69efcd8f
+0x0541 xxxx xxxx vm_ins_03_vpxor_206       = 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0x0381 xxxx xxxx vm_ins_15_vpermd_062      = 0x90f7651cfc3b994e2a906eae5b53c1f926046af3103cd6712cbff536b48a790f
+0x031D xxxx xxxx vm_ins_03_vpxor_037       = 0x63717e3a63717e3a63717e3a63717e3a63717e3a63717e3a63717e3a63717e3a
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_109 = 0x1
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_124 = 0x40
+0x04CD xxxx xxxx vm_ins_04_vpor_177        = 0x41e0cb7af5d17defd7e3886faa70ace203d36059c0ab718749b8ecac80425ca9
+0x0551 xxxx xxxx vm_ins_0B_vpaddd_210      = 0x13eb954f3aded298a81b1ea3ba2d45d6c921ba780165f91debb6a533e5341ad
+0x032D xxxx xxxx vm_ins_05_vpand_041       = 0x604032307060427042107040027042401070707042401250524040107042406
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_111 = 0x1
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_100 = 0x40
+0x0561 xxxx xxxx vm_ins_13_vpslld_214      = 0xf1b2ce80b390d580e50a3480911fcb8027e3b7006e498980f867e80069d53380
+0x0339 xxxx xxxx vm_ins_04_vpor_044        = 0x4f333b5b3d742dd3779b91ea7fa9d5287293fa882b4464dc1ecd58ff0668cad
+0x03D9 xxxx xxxx vm_ins_13_vpslld_084      = 0xec034500bc6a228066458280a40ac6002121680049710c802c9d4d806be3d580
+0x05D3 xxxx xxxx vm_ins_05_vpand_235       = 0x1ea1f3b229c845e81a861c08a82aa70a615ed201acb27070
+0x03BD xxxx xxxx vm_ins_05_vpand_077       = 0x220031300001310032452130120531100241113010411030020421101245
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_106 = 0x40
+0x0287 xxxx xxxx vm_ins_11_vmovdqu_022     = 0x500000005000000050000000500000005000000050000000500000005
+0x0243 xxxx xxxx vm_ins_11_vmovdqu_020     = 0x300000003000000030000000300000003000000030000000300000003
+0x03E9 xxxx xxxx vm_ins_12_vpsrld_088      = 0x1e7b000012ef1a000a5991001fe90200034848000d925c0008cb2700001af8
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_116 = 0x40
+0x04D9 xxxx xxxx vm_ins_04_vpor_180        = 0x32de90785f7bfd74e21bf5f82b38aa9cd81640f4dc61f02a3b2b126e972a6010
+0x033D xxxx xxxx vm_ins_16_vpcmpeqb_045    = 0x0
+0x0341 xxxx xxxx vm_ins_13_vpslld_046      = 0xcce00000d0a000006e400000a74000004fe000001180000035600000a3200000
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_125 = 0x1
+0x0389 xxxx xxxx vm_ins_13_vpslld_064      = 0x7bb28e001dcca70048375700a9e0fc80023579801e6b38805ffa9b00453c8780
+0x0531 xxxx xxxx vm_ins_13_vpslld_202      = 0x3c00000050000000cc00000028000000e4000000d4000000c000000000000000
+0x035D xxxx xxxx vm_ins_04_vpor_053        = 0x9da8279916ed9ebac8f1bbcdea953fd4fd443949326c15a2ac7e0f66656f8334
+0x0495 xxxx xxxx vm_ins_13_vpslld_163      = 0x9000000064000000bc000000dc0000000c000000980000002400000058000000
+0x0559 xxxx xxxx vm_ins_15_vpermd_212      = 0xfe3659de36721abbdca14695d223f97624fc76e90dc9313e9f0cfd058d3aa67
+0x0575 xxxx xxxx vm_ins_04_vpor_219        = 0xb3a1fc6c357c6ce48d37b942f2eba447edcc49f862721b92fa1d3e194ceb1a75
+0x04A9 xxxx xxxx vm_ins_05_vpand_168       = 0x0
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_098 = 0x40
+0x0521 xxxx xxxx vm_ins_13_vpslld_198      = 0x1e00000628000006e600000994000004720000006a000009600000078000000
+0x02FD xxxx xxxx vm_ins_15_vpermd_029      = 0x0
+0x050D xxxx xxxx vm_ins_03_vpxor_193       = 0x71ee9f22ede825b55aeae7942cea76a305b2c67c6a4418d5cce8ffc4987f8268
+0x0309 xxxx xxxx vm_ins_15_vpermd_032      = 0x0
+0x054D xxxx xxxx vm_ins_0B_vpaddd_209      = 0x13eb954f3aded298a81b1ea3ba2d45d6c921ba780165f58ad8b380eec11f567
+0x03A9 xxxx xxxx vm_ins_12_vpsrld_072      = 0x243dd9403f0ee6500aa41ba016d4f07009811ab0040f35900b2ffd402d229e4
+0x0411 xxxx xxxx vm_ins_03_vpxor_130       = 0xffffffdeffffffd7ffffffcfffffffe7ffffffdffffffff7ffffffe6ffffffd7
+0x04F9 xxxx xxxx vm_ins_03_vpxor_188       = 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0x04E5 xxxx xxxx vm_ins_12_vpsrld_183      = 0x3d20f06037fae8b037ebf1c0315538502c81e9b003e055b01624dc7014c0212
+flag = 0x4433543443314c504d49435f7536455336425f53334b4f4d5f4d563632585641
+0x0409 xxxx xxxx vm_ins_03_vpxor_128       = 0xffffffc6ffffffc6ffffffc6ffffffc6ffffffc6ffffffc6ffffffc6ffffffc6
+0x0305 xxxx xxxx vm_ins_15_vpermd_031      = 0x0
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_123 = 0x1
+0x0555 xxxx xxxx vm_ins_03_vpxor_211       = 0x624fc76e90dc9313e9f0cfd058d3aa670fe3659de36721abbdca14695d223f97
+0x051D xxxx xxxx vm_ins_04_vpor_197        = 0x3e2007ddc2fd8a79284db9958a7a6513ce951ca552281a93fbde580a9615e042
+0x056D xxxx xxxx vm_ins_13_vpslld_217      = 0xb3a00000356000008d200000f2e00000edc0000062600000fa0000004ce00000
+0x0431 xxxx xxxx vm_ins_04_vpor_138        = 0x1d2b8bac4fd5d406b6355193d8515cf3f1903dbafa2836a06acb6cb88cb89422
+0x0395 xxxx xxxx vm_ins_13_vpslld_067      = 0xa380000029c00000d5c000003f2000005e600000ce200000a6c0000021e00000
+0x0449 xxxx xxxx vm_ins_12_vpsrld_144      = 0x160e95c00327eae009db1aa039ec28a01d78c810107d14101c3565b011465c4
+0x0349 xxxx xxxx vm_ins_04_vpor_048        = 0xcced413cd0b76cf56e478ddea754a9fe4fea21ca119360ad3563f07ba32b7c19
+0x0445 xxxx xxxx vm_ins_13_vpslld_143      = 0x5c000000a00000008c000000e4000000ec000000b400000064000000a0000000
+0x0045 xxxx xxxx vm_ins_11_vmovdqu_005     = 0x1a1b1b1b1a13111111111111111111151a1b1b1b1a1311111111111111111115
+0x0371 xxxx xxxx vm_ins_0B_vpaddd_058      = 0x457514c9734da84b4fce8b0cd7fb0735f3861b269f4ae73b18b0de4fe5e1737d
+0x03B1 xxxx xxxx vm_ins_03_vpxor_074       = 0xaa634d300fe3ce68255844a273a6d9d290c9a8b51409cc4b218df33c5a183f71
+0x03B5 xxxx xxxx vm_ins_07_vpaddb_075      = 0x1e043a3c3226023205212e0606320102282a32290a0426171207002b3202071c
+0x03DD xxxx xxxx vm_ins_12_vpsrld_085      = 0x790000004b000000290000007f0000000d000000360000002300000000
+0x0479 xxxx xxxx vm_ins_13_vpslld_156      = 0x2c39b200fb53cc8013965780ca709b80e88dc180cba3b300deb9c480c10b2b00
+0x0485 xxxx xxxx vm_ins_13_vpslld_159      = 0x6c800000f320000095e0000026e0000070600000ecc0000071200000cac00000
+0x049D xxxx xxxx vm_ins_04_vpor_165        = 0x91c161cd6487da9ebd989cb2dce653840f07446e9be65d1d2436f5ce582e0859
+0x0331 xxxx xxxx vm_ins_13_vpslld_042      = 0x4f33380b3d742803779b900a7fa9d0087293f8082b44600c1ecd580f0668c80
+0x048D xxxx xxxx vm_ins_04_vpor_161        = 0x6c8e0b0ef3243ed495ecc4e526e7329c70783a23ecdf32e87121b7aecac17042
+0x04E9 xxxx xxxx vm_ins_04_vpor_184        = 0x5bd20f06ef7fae8b437ebf1c6715538502c81e9b8c3e055b65624dc7e54c0212
+0x0329 xxxx xxxx vm_ins_03_vpxor_040       = 0x63717e3a63717e3a63717e3a63717e3a63717e3a63717e3a63717e3a63717e3a
+0x0475 xxxx xxxx vm_ins_03_vpxor_155       = 0x887413dbc4cd2363178e2afdfac6d9da4b4d47e5462a413a3917a3a77a3f97fb
+0x0177 xxxx xxxx vm_ins_11_vmovdqu_014     = 0x6a09e667bb67ae853c6ef372a54ff53a510e527f9b05688c1f83d9ab5be0cd19
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_114 = 0x40
+0x0429 xxxx xxxx vm_ins_13_vpslld_136      = 0x1d2b8b804fd5d400b6355180d8515c80f1903d80fa2836806acb6c808cb89400
+0x0491 xxxx xxxx vm_ins_03_vpxor_162       = 0x40b7b9360877f244867a9356ec97a90098f5fbc3277c8194af9873280bca5b47
+0x036D xxxx xxxx vm_ins_03_vpxor_057       = 0xefbebfb9fdbff7b9bdfefbffedbffbbdbdfef3fbfdffb3f9bfbfb3bdafbefffd
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_110 = 0x40
+0x053D xxxx xxxx vm_ins_03_vpxor_205       = 0x13eb955f3aded2a8a81b1eb3ba2d45e6c921ba880165f59ad8b380fec11f568
+0x0315 xxxx xxxx vm_ins_03_vpxor_035       = 0x63717e3a63717e3a63717e3a63717e3a63717e3a63717e3a63717e3a63717e3a
+0x04A1 xxxx xxxx vm_ins_03_vpxor_166       = 0xd176d8fb6cf028da3be20fe43071fa8497f2bfadbc9adc898bae86e653e4531e
+0x0589 xxxx xxxx vm_ins_03_vpxor_224       = 0x362cbf7d29612593cecaa5cd3e80e71773a6c1d44278e01641dd1552b85d6770
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_108 = 0x40
+0x042D xxxx xxxx vm_ins_12_vpsrld_137      = 0x2c0000000600000013000000730000003a000000200000003800000022
+0x0345 xxxx xxxx vm_ins_12_vpsrld_047      = 0xd413c00176cf500078dde0014a9fe000a21ca001360ad0003f07b000b7c19
+0x0391 xxxx xxxx vm_ins_04_vpor_066        = 0x7bb28e481dcca77e48375715a9e0fcad023579931e6b38885ffa9b16453c87da
+0x0535 xxxx xxxx vm_ins_12_vpsrld_203      = 0x2e9f10003ce17ec00a9426d009c53d3012e74a8009a91400057def20214b0af
+0x0595 xxxx xxxx vm_ins_05_vpand_227       = 0x0
+0x00CD xxxx xxxx vm_ins_11_vmovdqu_009     = 0x140014001400140014001400140014001400140014001400140014001400140
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_102 = 0x40
+0x04F5 xxxx xxxx vm_ins_05_vpand_187       = 0x0
+0x041D xxxx xxxx vm_ins_03_vpxor_133       = 0x75e3207b41f4506d70d596d945197128583a57170c9faba8276c6aa3e7b0a2b9
+0x0481 xxxx xxxx vm_ins_04_vpor_158        = 0x2c39b238fb53cc90139657b3ca709b9ce88dc1e0cba3b37cdeb9c486c10b2b05
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_126 = 0x40
+0x0335 xxxx xxxx vm_ins_12_vpsrld_043      = 0x350000005d0000001e00000052000000280000004d0000000f0000002d
+0x0365 xxxx xxxx vm_ins_03_vpxor_055       = 0xadbeb3b9adbeb3b9adbeb3b9adbeb3b9adbeb3b9adbeb3b9adbeb3b9adbeb3b9
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_104 = 0x40
+0x0419 xxxx xxxx vm_ins_0B_vpaddd_132      = 0x16925e4122852e5713a4e8e326680f123b4b292d6feed592441d149984c1dc83
+0x03E1 xxxx xxxx vm_ins_04_vpor_086        = 0xec034579bc6a22cb664582a9a40ac67f2121680d49710cb62c9d4da36be3d580
+0x0465 xxxx xxxx vm_ins_0B_vpaddd_151      = 0xa2a065b99ae6395c6ecc0db368f3686c13290d5e4287d96ad426205008a452c7
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_117 = 0x1
+0x0459 xxxx xxxx vm_ins_03_vpxor_148       = 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_103 = 0x1
+0x04F1 xxxx xxxx vm_ins_03_vpxor_186       = 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0x00AB xxxx xxxx vm_ins_11_vmovdqu_008     = 0x2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f
+0x0359 xxxx xxxx vm_ins_12_vpsrld_052      = 0x1a8279902ed9eba00f1bbcd02953fd401443949026c15a2007e0f66016f8334
+0x0489 xxxx xxxx vm_ins_12_vpsrld_160      = 0xe0b0e00043ed4000cc4e50007329c00183a23001f32e80001b7ae00017042
+0x0499 xxxx xxxx vm_ins_12_vpsrld_164      = 0x1c161cd0087da9e01989cb200e653840307446e03e65d1d0036f5ce002e0859
+0x05B1 xxxx xxxx vm_ins_11_vmovdqu_234     = 0xffffffffffffffffffffffffffffffffffffffffffffffff
+0x05D7 xxxx xxxx vm_ins_11_vmovdqu_236     = 0x2176620c3a5c0f290b583618734f07102e332623780e59150c05172d4b1b1e22
+0x02F9 xxxx xxxx vm_ins_15_vpermd_028      = 0x0
+0x0351 xxxx xxxx vm_ins_16_vpcmpeqb_050    = 0x0
+0x0001 xxxx xxxx vm_ins_11_vmovdqu_003     = 0x393130324552414c46
+0x04E1 xxxx xxxx vm_ins_13_vpslld_182      = 0x58000000ec0000004000000064000000000000008c00000064000000e4000000
+0x0511 xxxx xxxx vm_ins_14_vpshufb_194     = 0x1ea1f3b229c845e81a861c0800000000a82aa70a615ed201acb27070
+0x039D xxxx xxxx vm_ins_04_vpor_069        = 0xa3921eec29df8773d5c5520d3f2b6a785e64c08dce22079aa6c597fe21f6914f
+0x0461 xxxx xxxx vm_ins_03_vpxor_150       = 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0x034D xxxx xxxx vm_ins_03_vpxor_049       = 0xc81e728963602e28593e34c000ae34acc8c31e62932726e0f48f25f4534df0b4
+0x0529 xxxx xxxx vm_ins_04_vpor_200        = 0x1f74f88629e70bf6e654a139944e29e472973a506a4d48a9602bef77810a585
+0x0369 xxxx xxxx vm_ins_05_vpand_056       = 0x42000c0050014400104048464001480410404042504100401201000402004c44
+0x0565 xxxx xxxx vm_ins_12_vpsrld_215      = 0x7000000710000005e0000002e0000003100000048000000740000002c
+0x0501 xxxx xxxx vm_ins_0B_vpaddd_190      = 0x28ec540345d52e0f7686c28ae65d55fad90d3e3590f4852e4921e54944658af0
+0x03D5 xxxx xxxx vm_ins_03_vpxor_083       = 0x3c4628237cae34686ae6cfadb45dbea4632f63966b434d0b785ce5aba41bd475
+0x057D xxxx xxxx vm_ins_13_vpslld_221      = 0x74000000ac000000a40000005c000000b80000004c000000400000009c000000
+0x03AD xxxx xxxx vm_ins_04_vpor_073        = 0x7243dd943bf0ee65b8aa41bae56d4f07cc9811abc440f359d8b2ffd43ed229e4
+0x0379 xxxx xxxx vm_ins_07_vpaddb_060      = 0x604032307060427042107040027042401070707042401250524040107042406
+0x03B9 xxxx xxxx vm_ins_03_vpxor_076       = 0xcecfcdbacecfcdbacecfcdbacecfcdbacecfcdbacecfcdbacecfcdbacecfcdba
+0x01BB xxxx xxxx vm_ins_11_vmovdqu_016     = 0x300000002000000010000000000000007000000060000000500000004
+0x03D1 xxxx xxxx vm_ins_15_vpermd_082      = 0xf3d8068a9778d44552cc8b05ff48158c1a4242d06c92e21946593a9b00d7c7ab
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_127 = 0x1
+0x0265 xxxx xxxx vm_ins_11_vmovdqu_021     = 0x400000004000000040000000400000004000000040000000400000004
+0x0539 xxxx xxxx vm_ins_04_vpor_204        = 0x3ee9f10053ce17eccca9426d289c53d3e52e74a8d49a9140c057def20214b0af
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_122 = 0x40
+0x0455 xxxx xxxx vm_ins_02_vpmaddwd_147    = 0xf3a11e00c829b2001ae84500081c8600a72aa8005e610a00ac01d2007070b2
+0x04B5 xxxx xxxx vm_ins_0B_vpaddd_171      = 0xd176d8fa6cf028d93be20fe33071fa8397f2bfacbc9adcc1bcdeb92aa6259f63
+0x02F5 xxxx xxxx vm_ins_15_vpermd_027      = 0x3900000039000000390000003900000039000000390000003900000039
+0x0549 xxxx xxxx vm_ins_03_vpxor_208       = 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+0x0505 xxxx xxxx vm_ins_03_vpxor_191       = 0x4b9d2a3926a4503515f7bcb0852c2bc0ba7c400ff385fb142a509b732714f4ca
+0x0405 xxxx xxxx vm_ins_01_vpmaddubsw_u2s_121 = 0x1
+0x04ED xxxx xxxx vm_ins_03_vpxor_185       = 0x28ec540445d52e107686c28be65d55fbd90d3e3690f484f617f1b305f2243eab
+0x0385 xxxx xxxx vm_ins_14_vpshufb_063     = 0xb9bf0404b9b9bfb9bf10b9bf00b9bfbf10b9b9b9bfbf10bfbfbfbf10b9bfbfb9
+Possible flag AVX26VM_MOK3S_B6SE6u_CIMPL1C4T3D
+Possible flag AVX26VM_MOK3S_B6SE6u_CIMPLJC4T3D
+Possible flag AVX26VM_M4KrS_B6SE64_CIMQ1JC4E3D
+Possible flag AVX26VM_M4KrS_B6SE64_C0MQ1JC4E3D
+Possible flag AVX26VM_M4KrS_B6SE6u_C0MQ1JC4E3D
+Possible flag AVX26VM_M4KrS_B6SE6u_C0MQ1JC4ErD
+Possible flag AVX26VM_M4KrS_B6SE64_C0MQ1JC4ErD
+Possible flag AVX26VM_MOKrS_B6SE64_C0MQ1JC4ErD
+Possible flag AVX2_VM_M4KrS_B6SE64_C0MQ1JC4ErD
+Possible flag AVX26VM_M4KrS_BASE64_C0MQ1JC4ErD
+Possible flag AVX26VM_MOKrS_BASE64_C0MQ1JC4ErD
+Possible flag AVX26VM_M4KrS_BASE64_C0MQ1JC4E3D
+Possible flag AVX26VM_MOKrS_BASE64_C0MQ1JC4E3D
+Possible flag AVX26VM_MOKrS_B6SE64_C0MQ1JC4E3D
+Possible flag AVX26VM_MOKrS_B6SE64_C0MQ11C4E3D
+Possible flag AVX26VM_MOKrS_B6SE64_C0MQ11C4ErD
+Possible flag AVX26VM_MOKrS_B6SE64_C0MPL1C4E3D
+Possible flag AVX26VM_MOKrS_B6SE64_C0MPL1C4ErD
+Possible flag AVX26VM_MOK3S_B6SE64_C0MQ11C4E3D
+Possible flag AVX26VM_MOK3S_B6SE64_C0MQ11C4ErD
+Possible flag AVX26VM_MOK3S_B6SE64_C0MPL1C4ErD
+Possible flag AVX26VM_MOK3S_B6SE64_C0MPL1C4E3D
+Possible flag AVX26VM_MOKrS_B6SE64_CIMQ11C4ErD
+Possible flag AVX26VM_MOK3S_B6SE64_CIMQ11C4ErD
+Possible flag AVX26VM_MOKrS_B6SE64_CIMQ11C4E3D
+Possible flag AVX26VM_MOK3S_B6SE64_CIMQ11C4E3D
+Possible flag AVX26VM_MOKrS_B6SE64_CIMQ11C4TrD
+Possible flag AVX26VM_MOKrS_B6SE64_CIMQ11C4T3D
+Possible flag AVX26VM_MOK3S_B6SE64_CIMQ11C4TrD
+Possible flag AVX26VM_MOK3S_B6SE64_CIMQ11C4T3D
+Possible flag AVX26VM_MOKrS_B6SE64_C0MQ11C4TrD
+Possible flag AVX26VM_MOKrS_B6SE64_C0MQ11C4T3D
+Possible flag AVX26VM_MOK3S_B6SE64_C0MQ11C4TrD
+Possible flag AVX26VM_MOK3S_B6SE64_C0MQ11C4T3D
+Possible flag AVX26VM_MOKrS_B6SE6u_CIMQ11C4TrD
+Possible flag AVX26VM_MOKrS_B6SE6u_CIMQ11C4T3D
+Possible flag AVX26VM_MOK3S_B6SE6u_CIMQ11C4TrD
+Possible flag AVX26VM_MOK3S_B6SE6u_CIMQ11C4T3D
+Possible flag AVX26VM_MOKrS_B6SE6u_C0MQ11C4TrD
+Possible flag AVX26VM_MOKrS_B6SE6u_C0MQ11C4T3D
+Possible flag AVX26VM_MOK3S_B6SE6u_C0MQ11C4TrD
+Possible flag AVX26VM_MOK3S_B6SE6u_C0MQ11C4T3D
+Possible flag AVX26VM_M4KrS_B6SE6u_CIMQ11C4TrD
+Possible flag AVX26VM_M4KrS_B6SE6u_CIMQ11C4T3D
+Possible flag AVX26VM_M4K3S_B6SE6u_CIMQ11C4TrD
+Possible flag AVX26VM_M4K3S_B6SE6u_CIMQ11C4T3D
+Possible flag AVX26VM_M4KrS_B6SE6u_C0MQ11C4TrD
+Possible flag AVX26VM_M4KrS_B6SE6u_C0MQ11C4T3D
+Possible flag AVX26VM_M4K3S_B6SE6u_C0MQ11C4TrD
+Possible flag AVX26VM_M4K3S_B6SE6u_C0MQ11C4T3D
+Possible flag AVX26VM_M4KrS_BASE6u_CIMQ11C4TrD
+Possible flag AVX26VM_M4KrS_BASE6u_CIMQ11C4T3D
+Possible flag AVX26VM_M4K3S_BASE6u_CIMQ11C4TrD
+Possible flag AVX26VM_M4K3S_BASE6u_CIMQ11C4T3D
+Possible flag AVX26VM_M4KrS_BASE6u_C0MQ11C4TrD
+Possible flag AVX26VM_M4KrS_BASE6u_C0MQ11C4T3D
+Possible flag AVX26VM_M4K3S_BASE6u_C0MQ11C4TrD
+Possible flag AVX26VM_M4K3S_BASE6u_C0MQ11C4T3D
+Possible flag AVX2_VM_M4KrS_B6SE6u_CIMQ11C4TrD
+Possible flag AVX2_VM_M4KrS_B6SE6u_CIMQ11C4T3D
+Possible flag AVX2_VM_M4K3S_B6SE6u_CIMQ11C4TrD
+Possible flag AVX2_VM_M4K3S_B6SE6u_CIMQ11C4T3D
+Possible flag AVX2_VM_M4KrS_B6SE6u_C0MQ11C4TrD
+Possible flag AVX2_VM_M4KrS_B6SE6u_C0MQ11C4T3D
+Possible flag AVX2_VM_M4K3S_B6SE6u_C0MQ11C4TrD
+Possible flag AVX2_VM_M4K3S_B6SE6u_C0MQ11C4T3D
+Possible flag AVX2_VM_M4KrS_BASE6u_CIMQ11C4TrD
+Possible flag AVX2_VM_M4KrS_BASE6u_CIMQ11C4T3D
+Possible flag AVX2_VM_M4K3S_BASE6u_CIMQ11C4TrD
+Possible flag AVX2_VM_M4K3S_BASE6u_CIMQ11C4T3D
+Possible flag AVX2_VM_M4KrS_BASE6u_C0MQ11C4TrD
+Possible flag AVX2_VM_M4KrS_BASE6u_C0MQ11C4T3D
+Possible flag AVX2_VM_M4K3S_BASE6u_C0MQ11C4TrD
+Possible flag AVX2_VM_M4K3S_BASE6u_C0MQ11C4T3D
+Possible flag AVX2_VM_MOKrS_B6SE6u_CIMPL1C4ErD
+Possible flag AVX2_VM_MOKrS_B6SE6u_CIMPL1C4E3D
+Possible flag AVX2_VM_MOKrS_B6SE6u_C0MPL1C4ErD
+Possible flag AVX2_VM_MOKrS_B6SE6u_C0MPL1C4E3D
+Possible flag AVX2_VM_MOKrS_BASE6u_CIMPL1C4ErD
+Possible flag AVX2_VM_MOKrS_BASE6u_CIMPL1C4E3D
+Possible flag AVX2_VM_MOKrS_BASE6u_C0MPL1C4ErD
+Possible flag AVX2_VM_MOKrS_BASE6u_C0MPL1C4E3D
+Possible flag AVX2_VM_MOKrS_B6SE6u_CIMPLJC4ErD
+Possible flag AVX2_VM_M4KrS_B6SE6u_CIMPL1C4ErD
+Possible flag AVX26VM_MOKrS_B6SE6u_CIMPL1C4ErD
+Possible flag AVX2_VM_MOKrS_B6SE6u_CIMPL1C4TrD
+Possible flag AVX2_VM_MOKrS_B6SE6u_CIMPL1C4T3D
+Possible flag AVX2_VM_MOKrS_B6SE6u_C0MPL1C4TrD
+Possible flag AVX2_VM_MOKrS_B6SE6u_C0MPL1C4T3D
+Possible flag AVX2_VM_MOKrS_BASE6u_CIMPL1C4TrD
+Possible flag AVX2_VM_MOKrS_BASE6u_CIMPL1C4T3D
+Possible flag AVX2_VM_MOKrS_BASE6u_C0MPL1C4TrD
+Possible flag AVX2_VM_MOKrS_BASE6u_C0MPL1C4T3D
+Possible flag AVX2_VM_MOKrS_B6SE6u_CIMQ11C4ErD
+Possible flag AVX2_VM_MOKrS_B6SE6u_CIMQ11C4E3D
+Possible flag AVX2_VM_MOKrS_B6SE6u_C0MQ11C4ErD
+Possible flag AVX2_VM_MOKrS_B6SE6u_C0MQ11C4E3D
+Possible flag AVX2_VM_MOKrS_BASE6u_CIMQ11C4ErD
+Possible flag AVX2_VM_MOKrS_BASE6u_CIMQ11C4E3D
+Possible flag AVX2_VM_MOKrS_BASE6u_C0MQ11C4ErD
+Possible flag AVX2_VM_MOKrS_BASE6u_C0MQ11C4E3D
+Possible flag AVX2_VM_MOKrS_B6SE6u_CIMQ11C4TrD
+Possible flag AVX2_VM_MOKrS_B6SE6u_CIMQ11C4T3D
+Possible flag AVX2_VM_MOKrS_B6SE6u_C0MQ11C4TrD
+Possible flag AVX2_VM_MOKrS_B6SE6u_C0MQ11C4T3D
+Possible flag AVX2_VM_MOKrS_BASE6u_CIMQ11C4TrD
+Possible flag AVX2_VM_MOKrS_BASE6u_CIMQ11C4T3D
+Possible flag AVX2_VM_MOKrS_BASE6u_C0MQ11C4TrD
+Possible flag AVX2_VM_MOKrS_BASE6u_C0MQ11C4T3D
+Possible flag AVX2_VM_MOK3S_B6SE6u_CIMQ11C4ErD
+Possible flag AVX2_VM_MOK3S_B6SE6u_CIMQ11C4E3D
+Possible flag AVX2_VM_MOK3S_B6SE6u_C0MQ11C4ErD
+Possible flag AVX2_VM_MOK3S_B6SE6u_C0MQ11C4E3D
+Possible flag AVX2_VM_MOK3S_BASE6u_CIMQ11C4ErD
+Possible flag AVX2_VM_MOK3S_BASE6u_CIMQ11C4E3D
+Possible flag AVX2_VM_MOK3S_BASE6u_C0MQ11C4ErD
+Possible flag AVX2_VM_MOK3S_BASE6u_C0MQ11C4E3D
+Possible flag AVX2_VM_MOK3S_B6SE6u_CIMQ11C4TrD
+Possible flag AVX2_VM_MOK3S_B6SE6u_CIMQ11C4T3D
+Possible flag AVX2_VM_MOK3S_B6SE6u_C0MQ11C4TrD
+Possible flag AVX2_VM_MOK3S_B6SE6u_C0MQ11C4T3D
+Possible flag AVX2_VM_MOK3S_BASE6u_CIMQ11C4TrD
+Possible flag AVX2_VM_MOK3S_BASE6u_CIMQ11C4T3D
+Possible flag AVX2_VM_MOK3S_BASE6u_C0MQ11C4TrD
+Possible flag AVX2_VM_MOK3S_BASE6u_C0MQ11C4T3D
+Possible flag AVX2_VM_M4KrS_B6SE6u_CIMQ11C4ErD
+Possible flag AVX2_VM_M4KrS_B6SE6u_CIMQ11C4E3D
+Possible flag AVX2_VM_M4KrS_B6SE6u_C0MQ11C4ErD
+Possible flag AVX2_VM_M4KrS_B6SE6u_C0MQ11C4E3D
+Possible flag AVX2_VM_M4KrS_BASE6u_CIMQ11C4ErD
+Possible flag AVX2_VM_M4KrS_BASE6u_CIMQ11C4E3D
+Possible flag AVX2_VM_M4KrS_BASE6u_C0MQ11C4ErD
+Possible flag AVX2_VM_M4KrS_BASE6u_C0MQ11C4E3D
+Possible flag AVX26VM_MOKrS_B6SE6u_CIMQ11C4ErD
+Possible flag AVX26VM_MOKrS_B6SE6u_CIMQ11C4E3D
+Possible flag AVX26VM_MOKrS_B6SE6u_C0MQ11C4ErD
+Possible flag AVX26VM_MOKrS_B6SE6u_C0MQ11C4E3D
+Possible flag AVX26VM_MOKrS_BASE6u_CIMQ11C4ErD
+Possible flag AVX26VM_MOKrS_BASE6u_CIMQ11C4E3D
+Possible flag AVX26VM_MOKrS_BASE6u_C0MQ11C4ErD
+Possible flag AVX26VM_MOKrS_BASE6u_C0MQ11C4E3D
+Possible flag AVX26VM_MOKrS_BASE6u_CIMQ11C4TrD
+Possible flag AVX26VM_MOKrS_BASE6u_CIMQ11C4T3D
+Possible flag AVX26VM_MOKrS_BASE6u_C0MQ11C4TrD
+Possible flag AVX26VM_MOKrS_BASE6u_C0MQ11C4T3D
+Possible flag AVX26VM_M4KrS_B6SE6u_CIMQ11C4ErD
+Possible flag AVX26VM_M4KrS_B6SE6u_CIMQ11C4E3D
+Possible flag AVX26VM_M4KrS_B6SE6u_C0MQ11C4ErD
+Possible flag AVX26VM_M4KrS_B6SE6u_C0MQ11C4E3D
+Possible flag AVX26VM_M4KrS_BASE6u_CIMQ11C4ErD
+Possible flag AVX26VM_M4KrS_BASE6u_CIMQ11C4E3D
+Possible flag AVX26VM_M4KrS_BASE6u_C0MQ11C4ErD
+Possible flag AVX26VM_M4KrS_BASE6u_C0MQ11C4E3D
+Possible flag AVX26VM_MOKrS_B6SE6u_CIMQ1JC4ErD
+Possible flag AVX26VM_MOKrS_B6SE6u_CIMQ1JC4E3D
+Possible flag AVX26VM_MOKrS_B6SE6u_C0MQ1JC4ErD
+Possible flag AVX26VM_MOKrS_B6SE6u_C0MQ1JC4E3D
+Possible flag AVX26VM_MOKrS_BASE6u_CIMQ1JC4ErD
+Possible flag AVX26VM_MOKrS_BASE6u_CIMQ1JC4E3D
+Possible flag AVX26VM_MOKrS_BASE6u_C0MQ1JC4ErD
+Possible flag AVX26VM_MOKrS_BASE6u_C0MQ1JC4E3D
+Possible flag AVX26VM_MOKrS_B6SE6u_CIMQ1JC4TrD
+Possible flag AVX26VM_MOKrS_B6SE6u_CIMQ1JC4T3D
+Possible flag AVX26VM_MOKrS_B6SE6u_C0MQ1JC4T3D
+Possible flag AVX26VM_MOKrS_BASE6u_CIMQ1JC4T3D
+Possible flag AVX26VM_MOKrS_BASE6u_C0MQ1JC4T3D
+Possible flag AVX26VM_M4KrS_B6SE6u_CIMQ1JC4E3D
+Possible flag AVX26VM_M4KrS_BASE6u_CIMQ1JC4E3D
+Possible flag AVX26VM_M4KrS_BASE6u_C0MQ1JC4E3D
+Possible flag AVX26VM_M4KrS_B6SE6u_CIMQ1JC4T3D
+Possible flag AVX26VM_M4KrS_B6SE6u_C0MQ1JC4T3D
+Possible flag AVX26VM_M4KrS_BASE6u_CIMQ1JC4T3D
+Possible flag AVX26VM_M4KrS_BASE6u_C0MQ1JC4T3D
+Possible flag AVX26VM_MOKrS_BASE64_CIMQ11C4E3D
+Possible flag AVX26VM_MOKrS_BASE64_C0MQ11C4E3D
+Possible flag AVX26VM_MOKrS_BASE64_CIMQ11C4T3D
+Possible flag AVX26VM_MOKrS_BASE64_C0MQ11C4T3D
+Possible flag AVX26VM_M4KrS_B6SE64_CIMQ11C4E3D
+Possible flag AVX26VM_M4KrS_B6SE64_C0MQ11C4E3D
+Possible flag AVX26VM_M4KrS_BASE64_CIMQ11C4E3D
+Possible flag AVX26VM_M4KrS_BASE64_C0MQ11C4E3D
+Possible flag AVX26VM_M4KrS_B6SE64_CIMQ11C4T3D
+Possible flag AVX26VM_M4KrS_B6SE64_C0MQ11C4T3D
+Possible flag AVX26VM_M4KrS_BASE64_CIMQ11C4T3D
+Possible flag AVX26VM_M4KrS_BASE64_C0MQ11C4T3D
+Possible flag AVX26VM_MOKrS_B6SE64_CIMQ1JC4E3D
+Possible flag AVX26VM_MOKrS_BASE64_CIMQ1JC4E3D
+Possible flag AVX26VM_MOKrS_B6SE64_CIMQ1JC4T3D
+Possible flag AVX26VM_MOKrS_B6SE64_C0MQ1JC4T3D
+Possible flag AVX26VM_MOKrS_BASE64_CIMQ1JC4T3D
+Possible flag AVX26VM_MOKrS_BASE64_C0MQ1JC4T3D
+Possible flag AVX26VM_M4KrS_BASE64_CIMQ1JC4E3D
+Possible flag AVX26VM_M4KrS_B6SE64_CIMQ1JC4T3D
+Possible flag AVX26VM_M4KrS_B6SE64_C0MQ1JC4T3D
+Possible flag AVX26VM_M4KrS_BASE64_CIMQ1JC4T3D
+Possible flag AVX26VM_M4KrS_BASE64_C0MQ1JC4T3D
+Possible flag AVX26VM_MOKrS_B6SE6u_CIMPL1C4E3D
+Possible flag AVX26VM_MOKrS_B6SE64_CIMPL1C4E3D
+Possible flag AVX26VM_M4KrS_B6SE6u_CIMPL1C4E3D
+Possible flag AVX26VM_M4KrS_B6SE64_CIMPL1C4E3D
+Possible flag AVX26VM_MOKrS_B6SE6u_CIMPLJC4E3D
+Possible flag AVX26VM_MOKrS_B6SE64_CIMPLJC4E3D
+Possible flag AVX26VM_M4KrS_B6SE6u_CIMPLJC4E3D
+Possible flag AVX26VM_M4KrS_B6SE64_CIMPLJC4E3D
+Possible flag AVX26VM_MOKrS_B6SE6u_C0MPL1C4E3D
+Possible flag AVX26VM_M4KrS_B6SE6u_C0MPL1C4E3D
+Possible flag AVX26VM_M4KrS_B6SE64_C0MPL1C4E3D
+Possible flag AVX26VM_MOKrS_B6SE6u_C0MPLJC4E3D
+Possible flag AVX26VM_MOKrS_B6SE64_C0MPLJC4E3D
+Possible flag AVX26VM_M4KrS_B6SE6u_C0MPLJC4E3D
+Possible flag AVX26VM_M4KrS_B6SE64_C0MPLJC4E3D
+Possible flag AVX26VM_MOKrS_BASE6u_CIMPL1C4E3D
+Possible flag AVX26VM_MOKrS_BASE64_CIMPL1C4E3D
+Possible flag AVX26VM_M4KrS_BASE6u_CIMPL1C4E3D
+Possible flag AVX26VM_M4KrS_BASE64_CIMPL1C4E3D
+Possible flag AVX26VM_MOKrS_BASE6u_CIMPLJC4E3D
+Possible flag AVX26VM_MOKrS_BASE64_CIMPLJC4E3D
+Possible flag AVX26VM_M4KrS_BASE6u_CIMPLJC4E3D
+Possible flag AVX26VM_M4KrS_BASE64_CIMPLJC4E3D
+Possible flag AVX26VM_MOKrS_BASE6u_C0MPL1C4E3D
+Possible flag AVX26VM_MOKrS_BASE64_C0MPL1C4E3D
+Possible flag AVX26VM_M4KrS_BASE6u_C0MPL1C4E3D
+Possible flag AVX26VM_M4KrS_BASE64_C0MPL1C4E3D
+Possible flag AVX26VM_MOKrS_BASE6u_C0MPLJC4E3D
+Possible flag AVX26VM_MOKrS_BASE64_C0MPLJC4E3D
+Possible flag AVX26VM_M4KrS_BASE6u_C0MPLJC4E3D
+Possible flag AVX26VM_M4KrS_BASE64_C0MPLJC4E3D
+Possible flag AVX26VM_MOKrS_B6SE6u_CIMPL1C4T3D
+Possible flag AVX26VM_MOKrS_B6SE64_CIMPL1C4T3D
+Possible flag AVX26VM_M4KrS_B6SE6u_CIMPL1C4T3D
+Possible flag AVX26VM_M4KrS_B6SE64_CIMPL1C4T3D
+Possible flag AVX26VM_MOKrS_B6SE6u_CIMPLJC4T3D
+Possible flag AVX26VM_MOKrS_B6SE64_CIMPLJC4T3D
+Possible flag AVX26VM_M4KrS_B6SE6u_CIMPLJC4T3D
+Possible flag AVX26VM_M4KrS_B6SE64_CIMPLJC4T3D
+Possible flag AVX26VM_MOKrS_B6SE6u_C0MPL1C4T3D
+Possible flag AVX26VM_MOKrS_B6SE64_C0MPL1C4T3D
+Possible flag AVX26VM_M4KrS_B6SE6u_C0MPL1C4T3D
+Possible flag AVX26VM_M4KrS_B6SE64_C0MPL1C4T3D
+Possible flag AVX26VM_MOKrS_B6SE6u_C0MPLJC4T3D
+Possible flag AVX26VM_MOKrS_B6SE64_C0MPLJC4T3D
+Possible flag AVX26VM_M4KrS_B6SE6u_C0MPLJC4T3D
+Possible flag AVX26VM_M4KrS_B6SE64_C0MPLJC4T3D
+Possible flag AVX26VM_MOKrS_BASE6u_CIMPL1C4T3D
+Possible flag AVX26VM_MOKrS_BASE64_CIMPL1C4T3D
+Possible flag AVX26VM_M4KrS_BASE6u_CIMPL1C4T3D
+Possible flag AVX26VM_M4KrS_BASE64_CIMPL1C4T3D
+Possible flag AVX26VM_MOKrS_BASE6u_CIMPLJC4T3D
+Possible flag AVX26VM_MOKrS_BASE64_CIMPLJC4T3D
+Possible flag AVX26VM_M4KrS_BASE6u_CIMPLJC4T3D
+Possible flag AVX26VM_M4KrS_BASE64_CIMPLJC4T3D
+Possible flag AVX26VM_MOKrS_BASE6u_C0MPL1C4T3D
+Possible flag AVX26VM_MOKrS_BASE64_C0MPL1C4T3D
+Possible flag AVX26VM_M4KrS_BASE6u_C0MPL1C4T3D
+Possible flag AVX26VM_M4KrS_BASE64_C0MPL1C4T3D
+Possible flag AVX26VM_MOKrS_BASE6u_C0MPLJC4T3D
+Possible flag AVX26VM_MOKrS_BASE64_C0MPLJC4T3D
+Possible flag AVX26VM_M4KrS_BASE6u_C0MPLJC4T3D
+Possible flag AVX26VM_M4KrS_BASE64_C0MPLJC4T3D
+Possible flag AVX26VM_MOK3S_B6SE6u_CIMPL1C4E3D
+Possible flag AVX26VM_MOK3S_B6SE64_CIMPL1C4E3D
+Possible flag AVX26VM_M4K3S_B6SE6u_CIMPL1C4E3D
+Possible flag AVX26VM_M4K3S_B6SE64_CIMPL1C4E3D
+Possible flag AVX26VM_MOK3S_B6SE6u_CIMPLJC4E3D
+Possible flag AVX26VM_MOK3S_B6SE64_CIMPLJC4E3D
+Possible flag AVX26VM_M4K3S_B6SE6u_CIMPLJC4E3D
+Possible flag AVX26VM_M4K3S_B6SE64_CIMPLJC4E3D
+Possible flag AVX26VM_MOK3S_B6SE6u_C0MPL1C4E3D
+Possible flag AVX26VM_M4K3S_B6SE6u_C0MPL1C4E3D
+Possible flag AVX26VM_M4K3S_B6SE64_C0MPL1C4E3D
+Possible flag AVX26VM_MOK3S_B6SE6u_C0MPLJC4E3D
+Possible flag AVX26VM_MOK3S_B6SE64_C0MPLJC4E3D
+Possible flag AVX26VM_M4K3S_B6SE6u_C0MPLJC4E3D
+Possible flag AVX26VM_M4K3S_B6SE64_C0MPLJC4E3D
+Possible flag AVX26VM_MOK3S_BASE6u_CIMPL1C4E3D
+Possible flag AVX26VM_MOK3S_BASE64_CIMPL1C4E3D
+Possible flag AVX26VM_M4K3S_BASE6u_CIMPL1C4E3D
+Possible flag AVX26VM_M4K3S_BASE64_CIMPL1C4E3D
+Possible flag AVX26VM_MOK3S_BASE6u_CIMPLJC4E3D
+Possible flag AVX26VM_MOK3S_BASE64_CIMPLJC4E3D
+Possible flag AVX26VM_M4K3S_BASE6u_CIMPLJC4E3D
+Possible flag AVX26VM_M4K3S_BASE64_CIMPLJC4E3D
+Possible flag AVX26VM_MOK3S_BASE6u_C0MPL1C4E3D
+Possible flag AVX26VM_MOK3S_BASE64_C0MPL1C4E3D
+Possible flag AVX26VM_M4K3S_BASE6u_C0MPL1C4E3D
+Possible flag AVX26VM_M4K3S_BASE64_C0MPL1C4E3D
+Possible flag AVX26VM_MOK3S_BASE6u_C0MPLJC4E3D
+Possible flag AVX26VM_MOK3S_BASE64_C0MPLJC4E3D
+Possible flag AVX26VM_M4K3S_BASE6u_C0MPLJC4E3D
+Possible flag AVX26VM_M4K3S_BASE64_C0MPLJC4E3D
+Possible flag AVX26VM_MOK3S_B6SE64_CIMPL1C4T3D
+Possible flag AVX26VM_M4K3S_B6SE6u_CIMPL1C4T3D
+Possible flag AVX26VM_M4K3S_B6SE64_CIMPL1C4T3D
+Possible flag AVX26VM_MOK3S_B6SE64_CIMPLJC4T3D
+Possible flag AVX26VM_M4K3S_B6SE64_CIMPLJC4T3D
+Possible flag AVX26VM_MOK3S_B6SE64_C0MPL1C4T3D
+Possible flag AVX26VM_M4K3S_B6SE64_C0MPL1C4T3D
+Possible flag AVX26VM_M4K3S_B6SE64_C0MPLJC4T3D
+Possible flag AVX26VM_MOK3S_B6SE64_C0MPLJC4T3D
+Possible flag AVX26VM_MOK3S_BASE64_CIMPL1C4T3D
+Possible flag AVX26VM_MOK3S_BASE64_C0MPL1C4T3D
+Possible flag AVX26VM_M4K3S_BASE64_CIMPL1C4T3D
+Possible flag AVX26VM_M4K3S_BASE64_C0MPL1C4T3D
+Possible flag AVX26VM_MOK3S_BASE64_CIMPLJC4T3D
+Possible flag AVX26VM_MOK3S_BASE64_C0MPLJC4T3D
+Possible flag AVX26VM_M4K3S_BASE64_CIMPLJC4T3D
+Possible flag AVX26VM_M4K3S_BASE64_C0MPLJC4T3D
+Possible flag AVX2_VM_MOKrS_B6SE64_CIMPL1C4E3D
+Possible flag AVX2_VM_MOKrS_B6SE64_C0MPL1C4E3D
+Possible flag AVX2_VM_MOKrS_B6SE64_CIMPL1C4T3D
+Possible flag AVX2_VM_MOKrS_B6SE64_C0MPL1C4T3D
+Possible flag AVX2_VM_M4KrS_B6SE64_CIMPL1C4E3D
+Possible flag AVX2_VM_M4KrS_B6SE64_C0MPL1C4E3D
+Possible flag AVX2_VM_M4KrS_B6SE64_CIMPL1C4T3D
+Possible flag AVX2_VM_M4KrS_B6SE64_C0MPL1C4T3D
+Possible flag AVX2_VM_MOKrS_B6SE64_CIMPLJC4E3D
+Possible flag AVX2_VM_MOKrS_B6SE64_C0MPLJC4E3D
+Possible flag AVX2_VM_MOKrS_B6SE64_CIMPLJC4T3D
+Possible flag AVX2_VM_MOKrS_B6SE64_C0MPLJC4T3D
+Possible flag AVX2_VM_M4KrS_B6SE64_CIMPLJC4E3D
+Possible flag AVX2_VM_M4KrS_B6SE64_C0MPLJC4E3D
+Possible flag AVX2_VM_M4KrS_B6SE64_CIMPLJC4T3D
+Possible flag AVX2_VM_M4KrS_B6SE64_C0MPLJC4T3D
+Possible flag AVX2_VM_MOKrS_BASE64_CIMPL1C4E3D
+Possible flag AVX2_VM_MOKrS_BASE64_C0MPL1C4E3D
+Possible flag AVX2_VM_MOKrS_BASE64_CIMPL1C4T3D
+Possible flag AVX2_VM_MOKrS_BASE64_C0MPL1C4T3D
+Possible flag AVX2_VM_M4KrS_BASE64_CIMPL1C4E3D
+Possible flag AVX2_VM_M4KrS_BASE64_C0MPL1C4E3D
+Possible flag AVX2_VM_M4KrS_BASE64_CIMPL1C4T3D
+Possible flag AVX2_VM_M4KrS_BASE64_C0MPL1C4T3D
+Possible flag AVX2_VM_MOKrS_BASE64_CIMPLJC4E3D
+Possible flag AVX2_VM_MOKrS_BASE64_C0MPLJC4E3D
+Possible flag AVX2_VM_MOKrS_BASE64_CIMPLJC4T3D
+Possible flag AVX2_VM_MOKrS_BASE64_C0MPLJC4T3D
+Possible flag AVX2_VM_M4KrS_BASE64_CIMPLJC4E3D
+Possible flag AVX2_VM_M4KrS_BASE64_C0MPLJC4E3D
+Possible flag AVX2_VM_M4KrS_BASE64_CIMPLJC4T3D
+Possible flag AVX2_VM_M4KrS_BASE64_C0MPLJC4T3D
+Possible flag AVX2_VM_MOKrS_B6SE64_CIMPL1C4ErD
+Possible flag AVX2_VM_MOKrS_B6SE64_C0MPL1C4ErD
+Possible flag AVX2_VM_MOKrS_B6SE64_CIMPL1C4TrD
+Possible flag AVX2_VM_MOKrS_B6SE64_C0MPL1C4TrD
+Possible flag AVX2_VM_M4KrS_B6SE64_CIMPL1C4ErD
+Possible flag AVX2_VM_M4KrS_B6SE64_C0MPL1C4ErD
+Possible flag AVX2_VM_M4KrS_B6SE64_CIMPL1C4TrD
+Possible flag AVX2_VM_M4KrS_B6SE64_C0MPL1C4TrD
+Possible flag AVX2_VM_MOKrS_B6SE64_CIMPLJC4ErD
+Possible flag AVX2_VM_MOKrS_B6SE64_C0MPLJC4ErD
+Possible flag AVX2_VM_MOKrS_B6SE64_CIMPLJC4TrD
+Possible flag AVX2_VM_MOKrS_B6SE64_C0MPLJC4TrD
+Possible flag AVX2_VM_M4KrS_B6SE64_CIMPLJC4ErD
+Possible flag AVX2_VM_M4KrS_B6SE64_C0MPLJC4ErD
+Possible flag AVX2_VM_M4KrS_B6SE64_CIMPLJC4TrD
+Possible flag AVX2_VM_M4KrS_B6SE64_C0MPLJC4TrD
+Possible flag AVX2_VM_MOKrS_BASE64_C0MPL1C4ErD
+Possible flag AVX2_VM_MOKrS_BASE64_C0MPL1C4TrD
+Possible flag AVX2_VM_M4KrS_BASE64_C0MPL1C4ErD
+Possible flag AVX2_VM_M4KrS_BASE64_C0MPL1C4TrD
+Possible flag AVX2_VM_MOKrS_BASE64_C0MPLJC4ErD
+Possible flag AVX2_VM_MOKrS_BASE64_C0MPLJC4TrD
+Possible flag AVX2_VM_M4KrS_BASE64_C0MPLJC4ErD
+Possible flag AVX2_VM_M4KrS_BASE64_C0MPLJC4TrD
+Possible flag AVX2_VM_MOKrS_B6SE64_C0MQ11C4ErD
+Possible flag AVX2_VM_MOKrS_B6SE64_C0MQ11C4TrD
+Possible flag AVX2_VM_M4KrS_B6SE64_C0MQ11C4ErD
+Possible flag AVX2_VM_M4KrS_B6SE64_C0MQ11C4TrD
+Possible flag AVX2_VM_MOKrS_B6SE64_C0MQ1JC4ErD
+Possible flag AVX2_VM_MOKrS_B6SE64_C0MQ1JC4TrD
+Possible flag AVX2_VM_M4KrS_B6SE64_C0MQ1JC4TrD
+Possible flag AVX2_VM_MOKrS_BASE64_C0MQ11C4TrD
+Possible flag AVX2_VM_M4KrS_BASE64_C0MQ11C4TrD
+Possible flag AVX2_VM_MOKrS_BASE64_C0MQ1JC4TrD
+Possible flag AVX2_VM_M4KrS_BASE64_C0MQ1JC4TrD
+Possible flag AVX2_VM_MOKrS_B6SE64_C0MQ11C4T3D
+Possible flag AVX2_VM_M4KrS_B6SE64_C0MQ11C4T3D
+Possible flag AVX2_VM_MOKrS_B6SE64_C0MQ1JC4T3D
+Possible flag AVX2_VM_M4KrS_B6SE64_C0MQ1JC4T3D
+Possible flag AVX2_VM_MOKrS_BASE64_C0MQ11C4T3D
+Possible flag AVX2_VM_M4KrS_BASE64_C0MQ11C4T3D
+Possible flag AVX2_VM_MOKrS_BASE64_C0MQ1JC4T3D
+Possible flag AVX2_VM_M4KrS_BASE64_C0MQ1JC4T3D
+Possible flag AVX2_VM_MOKrS_B6SE6u_C0MQ1JC4TrD
+Possible flag AVX2_VM_M4KrS_B6SE6u_C0MQ1JC4TrD
+Possible flag AVX2_VM_MOKrS_BASE6u_C0MQ1JC4TrD
+Possible flag AVX2_VM_M4KrS_BASE6u_C0MQ1JC4TrD
+Possible flag AVX2_VM_MOKrS_B6SE6u_C0MQ1JC4T3D
+Possible flag AVX2_VM_M4KrS_B6SE6u_C0MQ1JC4T3D
+Possible flag AVX2_VM_MOKrS_BASE6u_C0MQ1JC4T3D
+Possible flag AVX2_VM_M4KrS_BASE6u_C0MQ1JC4T3D
+Possible flag AVX2_VM_M4KrS_B6SE6u_C0MPL1C4TrD
+Possible flag AVX2_VM_MOKrS_B6SE6u_C0MPLJC4TrD
+Possible flag AVX2_VM_M4KrS_B6SE6u_C0MPLJC4TrD
+Possible flag AVX2_VM_M4KrS_BASE6u_C0MPL1C4TrD
+Possible flag AVX2_VM_MOKrS_BASE6u_C0MPLJC4TrD
+Possible flag AVX2_VM_M4KrS_BASE6u_C0MPLJC4TrD
+Possible flag AVX2_VM_M4KrS_B6SE6u_C0MPL1C4T3D
+Possible flag AVX2_VM_MOKrS_B6SE6u_C0MPLJC4T3D
+Possible flag AVX2_VM_M4KrS_B6SE6u_C0MPLJC4T3D
+Possible flag AVX2_VM_M4KrS_BASE6u_C0MPL1C4T3D
+Possible flag AVX2_VM_MOKrS_BASE6u_C0MPLJC4T3D
+Possible flag AVX2_VM_M4KrS_BASE6u_C0MPLJC4T3D
+Possible flag AVX2_VM_MOK3S_B6SE6u_C0MQ1JC4TrD
+Possible flag AVX2_VM_MOK3S_BASE6u_C0MQ1JC4TrD
+Possible flag AVX2_VM_MOK3S_BASE6u_C0MQ1JC4T3D
+Possible flag AVX2_VM_MOKrS_BASE6u_CIMQ1JC4TrD
+Possible flag AVX2_VM_MOKrS_BASE6u_CIMQ1JC4T3D
+Possible flag AVX2_VM_MOK3S_BASE6u_CIMQ1JC4TrD
+Possible flag AVX2_VM_MOK3S_BASE6u_CIMQ1JC4T3D
+Possible flag AVX2_VM_MOKrS_BASE64_CIMQ1JC4TrD
+Possible flag AVX2_VM_MOKrS_BASE64_CIMQ1JC4T3D
+Possible flag AVX2_VM_MOK3S_BASE64_CIMQ1JC4TrD
+Possible flag AVX2_VM_MOK3S_BASE64_C0MQ1JC4TrD
+Possible flag AVX2_VM_MOK3S_BASE64_CIMQ1JC4T3D
+Possible flag AVX2_VM_MOK3S_BASE64_C0MQ1JC4T3D
+Possible flag AVX2_VM_MOKrS_BASE6u_CIMPLJC4TrD
+Possible flag AVX2_VM_MOKrS_BASE6u_CIMPLJC4T3D
+Possible flag AVX2_VM_MOK3S_BASE6u_CIMPLJC4TrD
+Possible flag AVX2_VM_MOK3S_BASE6u_C0MPLJC4TrD
+Possible flag AVX2_VM_MOK3S_BASE6u_CIMPLJC4T3D
+Possible flag AVX2_VM_MOK3S_BASE6u_C0MPLJC4T3D
+Possible flag AVX2_VM_MOKrS_BASE64_CIMPLJC4TrD
+Possible flag AVX2_VM_MOK3S_BASE64_CIMPLJC4TrD
+Possible flag AVX2_VM_MOK3S_BASE64_C0MPLJC4TrD
+Possible flag AVX2_VM_MOK3S_BASE64_CIMPLJC4T3D
+Possible flag AVX2_VM_MOK3S_BASE64_C0MPLJC4T3D
+Possible flag AVX2_VM_M4KrS_BASE6u_CIMQ1JC4TrD
+Possible flag AVX2_VM_M4KrS_BASE6u_CIMQ1JC4T3D
+Possible flag AVX2_VM_M4K3S_BASE6u_CIMQ1JC4TrD
+Possible flag AVX2_VM_M4K3S_BASE6u_C0MQ1JC4TrD
+Possible flag AVX2_VM_M4K3S_BASE6u_CIMQ1JC4T3D
+Possible flag AVX2_VM_M4K3S_BASE6u_C0MQ1JC4T3D
+Possible flag AVX2_VM_M4KrS_BASE64_CIMQ1JC4TrD
+Possible flag AVX2_VM_M4KrS_BASE64_CIMQ1JC4T3D
+Possible flag AVX2_VM_M4K3S_BASE64_CIMQ1JC4TrD
+Possible flag AVX2_VM_M4K3S_BASE64_C0MQ1JC4TrD
+Possible flag AVX2_VM_M4K3S_BASE64_CIMQ1JC4T3D
+Possible flag AVX2_VM_M4K3S_BASE64_C0MQ1JC4T3D
+Possible flag AVX2_VM_MOKrS_BASE64_CIMQ11C4TrD
+Possible flag AVX2_VM_MOKrS_BASE64_CIMQ11C4T3D
+Possible flag AVX2_VM_MOK3S_BASE64_CIMQ11C4TrD
+Possible flag AVX2_VM_MOK3S_BASE64_C0MQ11C4TrD
+Possible flag AVX2_VM_MOK3S_BASE64_CIMQ11C4T3D
+Possible flag AVX2_VM_MOK3S_BASE64_C0MQ11C4T3D
+Possible flag AVX2_VM_M4KrS_BASE64_CIMQ11C4TrD
+Possible flag AVX2_VM_M4KrS_BASE64_CIMQ11C4T3D
+Possible flag AVX2_VM_M4K3S_BASE64_CIMQ11C4TrD
+Possible flag AVX2_VM_M4K3S_BASE64_C0MQ11C4TrD
+Possible flag AVX2_VM_M4K3S_BASE64_CIMQ11C4T3D
+Possible flag AVX2_VM_M4K3S_BASE64_C0MQ11C4T3D
+Possible flag AVX26VM_MOK3S_BASE6u_CIMQ11C4TrD
+Possible flag AVX26VM_MOK3S_BASE6u_C0MQ11C4TrD
+Possible flag AVX26VM_MOK3S_BASE6u_CIMQ11C4T3D
+Possible flag AVX26VM_MOK3S_BASE6u_C0MQ11C4T3D
+Possible flag AVX26VM_MOKrS_BASE64_CIMQ11C4TrD
+Possible flag AVX26VM_MOKrS_BASE64_C0MQ11C4TrD
+Possible flag AVX26VM_MOK3S_BASE64_CIMQ11C4TrD
+Possible flag AVX26VM_MOK3S_BASE64_C0MQ11C4TrD
+Possible flag AVX26VM_MOK3S_BASE64_CIMQ11C4T3D
+Possible flag AVX26VM_MOK3S_BASE64_C0MQ11C4T3D
+Possible flag AVX26VM_M4KrS_BASE64_CIMQ11C4TrD
+Possible flag AVX26VM_M4KrS_BASE64_C0MQ11C4TrD
+Possible flag AVX26VM_M4K3S_BASE64_CIMQ11C4TrD
+Possible flag AVX26VM_M4K3S_BASE64_C0MQ11C4TrD
+Possible flag AVX26VM_M4K3S_BASE64_CIMQ11C4T3D
+Possible flag AVX26VM_M4K3S_BASE64_C0MQ11C4T3D
+Possible flag AVX26VM_MOKrS_BASE6u_CIMQ1JC4TrD
+Possible flag AVX26VM_MOKrS_BASE64_CIMQ1JC4TrD
+Possible flag AVX26VM_M4KrS_BASE6u_CIMQ1JC4TrD
+Possible flag AVX26VM_M4KrS_BASE64_CIMQ1JC4TrD
+Possible flag AVX26VM_MOKrS_BASE6u_C0MQ1JC4TrD
+Possible flag AVX26VM_MOKrS_BASE64_C0MQ1JC4TrD
+Possible flag AVX26VM_M4KrS_BASE6u_C0MQ1JC4TrD
+Possible flag AVX26VM_M4KrS_BASE64_C0MQ1JC4TrD
+Possible flag AVX26VM_MOK3S_BASE6u_CIMQ1JC4TrD
+Possible flag AVX26VM_MOK3S_BASE64_CIMQ1JC4TrD
+Possible flag AVX26VM_M4K3S_BASE6u_CIMQ1JC4TrD
+Possible flag AVX26VM_M4K3S_BASE64_CIMQ1JC4TrD
+Possible flag AVX26VM_MOK3S_BASE6u_C0MQ1JC4TrD
+Possible flag AVX26VM_MOK3S_BASE64_C0MQ1JC4TrD
+Possible flag AVX26VM_M4K3S_BASE6u_C0MQ1JC4TrD
+Possible flag AVX26VM_M4K3S_BASE64_C0MQ1JC4TrD
+Possible flag AVX26VM_MOK3S_BASE6u_CIMQ1JC4T3D
+Possible flag AVX26VM_MOK3S_BASE64_CIMQ1JC4T3D
+Possible flag AVX26VM_M4K3S_BASE6u_CIMQ1JC4T3D
+Possible flag AVX26VM_M4K3S_BASE64_CIMQ1JC4T3D
+Possible flag AVX26VM_MOK3S_BASE6u_C0MQ1JC4T3D
+Possible flag AVX26VM_MOK3S_BASE64_C0MQ1JC4T3D
+Possible flag AVX26VM_M4K3S_BASE6u_C0MQ1JC4T3D
+Possible flag AVX26VM_M4K3S_BASE64_C0MQ1JC4T3D
+Possible flag AVX2_VM_MOKrS_B6SE64_CIMQ11C4TrD
+Possible flag AVX2_VM_M4KrS_B6SE64_CIMQ11C4TrD
+Possible flag AVX26VM_M4KrS_B6SE64_CIMQ11C4TrD
+Possible flag AVX26VM_M4KrS_B6SE64_C0MQ11C4TrD
+Possible flag AVX2_VM_MOKrS_B6SE64_CIMQ11C4T3D
+Possible flag AVX2_VM_M4KrS_B6SE64_CIMQ11C4T3D
+Possible flag AVX2_VM_MOK3S_B6SE64_CIMQ11C4TrD
+Possible flag AVX2_VM_M4K3S_B6SE64_CIMQ11C4TrD
+Possible flag AVX2_VM_MOK3S_B6SE64_C0MQ11C4TrD
+Possible flag AVX2_VM_M4K3S_B6SE64_C0MQ11C4TrD
+Possible flag AVX26VM_M4K3S_B6SE64_CIMQ11C4TrD
+Possible flag AVX26VM_M4KrS_B6SE64_CIMPL1C4TrD
+Possible flag AVX26VM_M4K3S_B6SE64_CIMPL1C4TrD
+Possible flag AVX26VM_M4K3S_B6SE6u_CIMPL1C4TrD
+Possible flag AVX26VM_MOK3S_B6SE6u_CIMPL1C4TrD
+Possible flag AVX26VM_MOK3S_B6SE64_CIMPL1C4TrD
+Possible flag AVX2_VM_MOKrS_B6SE64_CIMQ11C4ErD
+Possible flag AVX2_VM_M4KrS_B6SE64_CIMQ11C4ErD
+Possible flag AVX2_VM_M4KrS_B6SE6u_C0MPL1C4ErD
+Possible flag AVX26VM_MOKrS_B6SE64_CIMPL1C4ErD
+Possible flag AVX26VM_M4KrS_B6SE6u_CIMPL1C4ErD
+Possible flag AVX26VM_M4KrS_B6SE64_CIMPL1C4ErD
+Possible flag AVX26VM_M4KrS_B6SE64_CIMQ11C4ErD
+Possible flag AVX26VM_MOKrS_B6SE6u_C0MPL1C4ErD
+Possible flag AVX26VM_M4KrS_B6SE6u_C0MPL1C4ErD
+Possible flag AVX26VM_M4KrS_B6SE64_C0MPL1C4ErD
+Possible flag AVX26VM_M4KrS_B6SE64_C0MQ11C4ErD
+Possible flag AVX2_VM_MOKrS_B6SE64_CIMQ11C4E3D
+Possible flag AVX2_VM_M4KrS_B6SE6u_CIMPL1C4E3D
+Possible flag AVX2_VM_M4KrS_B6SE64_CIMQ11C4E3D
+Possible flag AVX2_VM_MOKrS_B6SE64_C0MQ11C4E3D
+Possible flag AVX2_VM_M4KrS_B6SE6u_C0MPL1C4E3D
+Possible flag AVX2_VM_M4KrS_B6SE64_C0MQ11C4E3D
+Possible flag AVX2_VM_MOKrS_B6SE6u_CIMQ1JC4ErD
+Possible flag AVX2_VM_MOKrS_B6SE64_CIMQ1JC4ErD
+Possible flag AVX2_VM_M4KrS_B6SE6u_CIMQ1JC4ErD
+Possible flag AVX2_VM_M4KrS_B6SE64_CIMQ1JC4ErD
+Possible flag AVX2_VM_MOKrS_B6SE6u_C0MQ1JC4ErD
+Possible flag AVX2_VM_M4KrS_B6SE6u_C0MQ1JC4ErD
+Possible flag AVX2_VM_M4KrS_B6SE6u_CIMPLJC4ErD
+Possible flag AVX2_VM_MOKrS_B6SE6u_C0MPLJC4ErD
+Possible flag AVX2_VM_M4KrS_B6SE6u_C0MPLJC4ErD
+Possible flag AVX26VM_MOKrS_B6SE64_CIMQ1JC4ErD
+Possible flag AVX26VM_M4KrS_B6SE6u_CIMQ1JC4ErD
+Possible flag AVX26VM_M4KrS_B6SE64_CIMQ1JC4ErD
+Possible flag AVX26VM_MOKrS_B6SE6u_CIMPLJC4ErD
+Possible flag AVX2_VM_MOKrS_B6SE6u_CIMQ1JC4E3D
+Possible flag AVX2_VM_MOKrS_B6SE64_CIMQ1JC4E3D
+Possible flag AVX2_VM_M4KrS_B6SE6u_CIMQ1JC4E3D
+Possible flag AVX2_VM_M4KrS_B6SE64_CIMQ1JC4E3D
+Possible flag AVX2_VM_MOKrS_B6SE6u_C0MQ1JC4E3D
+Possible flag AVX2_VM_MOKrS_B6SE64_C0MQ1JC4E3D
+Possible flag AVX2_VM_M4KrS_B6SE6u_C0MQ1JC4E3D
+Possible flag AVX2_VM_M4KrS_B6SE64_C0MQ1JC4E3D
+Possible flag AVX2_VM_MOKrS_B6SE6u_CIMPLJC4E3D
+Possible flag AVX2_VM_M4KrS_B6SE6u_CIMPLJC4E3D
+Possible flag AVX2_VM_MOKrS_B6SE6u_C0MPLJC4E3D
+Possible flag AVX2_VM_M4KrS_B6SE6u_C0MPLJC4E3D
+Possible flag AVX26VM_MOKrS_B6SE64_CIMPLJC4ErD
+Possible flag AVX26VM_M4KrS_B6SE6u_CIMPLJC4ErD
+Possible flag AVX26VM_M4KrS_B6SE64_CIMPLJC4ErD
+Possible flag AVX26VM_MOKrS_B6SE6u_C0MPLJC4ErD
+Possible flag AVX26VM_MOKrS_B6SE64_C0MPLJC4ErD
+Possible flag AVX26VM_M4KrS_B6SE6u_C0MPLJC4ErD
+Possible flag AVX26VM_M4KrS_B6SE64_C0MPLJC4ErD
+Possible flag AVX2_VM_MOKrS_BASE64_CIMQ11C4ErD
+Possible flag AVX2_VM_M4KrS_BASE64_CIMQ11C4ErD
+Possible flag AVX2_VM_MOKrS_BASE64_C0MQ11C4ErD
+Possible flag AVX2_VM_M4KrS_BASE64_C0MQ11C4ErD
+Possible flag AVX2_VM_MOKrS_BASE6u_CIMQ1JC4ErD
+Possible flag AVX2_VM_MOKrS_BASE64_CIMQ1JC4ErD
+Possible flag AVX2_VM_M4KrS_BASE6u_CIMQ1JC4ErD
+Possible flag AVX2_VM_M4KrS_BASE64_CIMQ1JC4ErD
+Possible flag AVX2_VM_MOKrS_BASE6u_C0MQ1JC4ErD
+Possible flag AVX2_VM_MOKrS_BASE64_C0MQ1JC4ErD
+Possible flag AVX2_VM_M4KrS_BASE6u_C0MQ1JC4ErD
+Possible flag AVX2_VM_M4KrS_BASE64_C0MQ1JC4ErD
+Possible flag AVX2_VM_MOKrS_BASE64_CIMQ11C4E3D
+Possible flag AVX2_VM_M4KrS_BASE64_CIMQ11C4E3D
+Possible flag AVX2_VM_MOKrS_BASE64_C0MQ11C4E3D
+Possible flag AVX2_VM_M4KrS_BASE64_C0MQ11C4E3D
+Possible flag AVX2_VM_MOKrS_BASE6u_CIMQ1JC4E3D
+Possible flag AVX2_VM_MOKrS_BASE64_CIMQ1JC4E3D
+Possible flag AVX2_VM_M4KrS_BASE6u_CIMQ1JC4E3D
+Possible flag AVX2_VM_M4KrS_BASE64_CIMQ1JC4E3D
+Possible flag AVX2_VM_MOKrS_BASE6u_C0MQ1JC4E3D
+Possible flag AVX2_VM_MOKrS_BASE64_C0MQ1JC4E3D
+Possible flag AVX2_VM_M4KrS_BASE6u_C0MQ1JC4E3D
+Possible flag AVX2_VM_M4KrS_BASE64_C0MQ1JC4E3D
+Possible flag AVX2_VM_M4KrS_BASE6u_CIMPL1C4ErD
+Possible flag AVX2_VM_M4KrS_BASE6u_C0MPL1C4ErD
+Possible flag AVX2_VM_MOKrS_BASE6u_CIMPLJC4ErD
+Possible flag AVX2_VM_M4KrS_BASE6u_CIMPLJC4ErD
+Possible flag AVX2_VM_MOKrS_BASE6u_C0MPLJC4ErD
+Possible flag AVX2_VM_M4KrS_BASE6u_C0MPLJC4ErD
+Possible flag AVX2_VM_MOKrS_BASE6u_CIMPLJC4E3D
+Possible flag AVX2_VM_M4KrS_BASE6u_CIMPL1C4E3D
+Possible flag AVX2_VM_M4KrS_BASE6u_CIMPLJC4E3D
+Possible flag AVX2_VM_MOKrS_BASE6u_C0MPLJC4E3D
+Possible flag AVX2_VM_M4KrS_BASE6u_C0MPL1C4E3D
+Possible flag AVX2_VM_M4KrS_BASE6u_C0MPLJC4E3D
+Possible flag AVX26VM_MOKrS_BASE6u_CIMPL1C4ErD
+Possible flag AVX26VM_MOKrS_BASE6u_CIMPLJC4ErD
+Possible flag AVX26VM_M4KrS_BASE6u_CIMQ1JC4ErD
+Possible flag AVX26VM_M4KrS_BASE6u_CIMPL1C4ErD
+Possible flag AVX26VM_M4KrS_BASE6u_CIMPLJC4ErD
+Possible flag AVX26VM_MOKrS_BASE6u_C0MPL1C4ErD
+Possible flag AVX26VM_MOKrS_BASE6u_C0MPLJC4ErD
+Possible flag AVX26VM_M4KrS_BASE6u_C0MQ1JC4ErD
+Possible flag AVX26VM_M4KrS_BASE6u_C0MPL1C4ErD
+Possible flag AVX26VM_M4KrS_BASE6u_C0MPLJC4ErD
+Possible flag AVX2_VM_MOKrS_B6SE6u_CIMQ1JC4TrD
+Possible flag AVX2_VM_M4KrS_B6SE6u_CIMQ1JC4TrD
+Possible flag AVX2_VM_MOKrS_B6SE6u_CIMPLJC4TrD
+Possible flag AVX2_VM_M4KrS_B6SE6u_CIMPL1C4TrD
+Possible flag AVX2_VM_M4KrS_B6SE6u_CIMPLJC4TrD
+Possible flag AVX2_VM_M4KrS_BASE6u_CIMPL1C4TrD
+Possible flag AVX2_VM_M4KrS_BASE6u_CIMPLJC4TrD
+Possible flag AVX2_VM_MOKrS_B6SE6u_CIMQ1JC4T3D
+Possible flag AVX2_VM_M4KrS_B6SE6u_CIMQ1JC4T3D
+Possible flag AVX2_VM_MOKrS_B6SE6u_CIMPLJC4T3D
+Possible flag AVX2_VM_M4KrS_B6SE6u_CIMPL1C4T3D
+Possible flag AVX2_VM_M4KrS_B6SE6u_CIMPLJC4T3D
+Possible flag AVX2_VM_M4KrS_BASE6u_CIMPL1C4T3D
+Possible flag AVX2_VM_M4KrS_BASE6u_CIMPLJC4T3D
+Possible flag AVX26VM_M4KrS_B6SE6u_CIMQ1JC4TrD
+Possible flag AVX26VM_MOKrS_B6SE6u_C0MQ1JC4TrD
+Possible flag AVX26VM_M4KrS_B6SE6u_C0MQ1JC4TrD
+Possible flag AVX26VM_MOKrS_B6SE6u_CIMPL1C4TrD
+Possible flag AVX26VM_MOKrS_B6SE6u_CIMPLJC4TrD
+Possible flag AVX26VM_MOKrS_BASE6u_CIMPL1C4TrD
+Possible flag AVX26VM_MOKrS_BASE6u_CIMPLJC4TrD
+Possible flag AVX26VM_M4KrS_B6SE6u_CIMPL1C4TrD
+Possible flag AVX26VM_M4KrS_B6SE6u_CIMPLJC4TrD
+Possible flag AVX26VM_M4KrS_BASE6u_CIMPL1C4TrD
+Possible flag AVX26VM_M4KrS_BASE6u_CIMPLJC4TrD
+Possible flag AVX26VM_MOKrS_B6SE6u_C0MPL1C4TrD
+Possible flag AVX26VM_MOKrS_B6SE6u_C0MPLJC4TrD
+Possible flag AVX26VM_MOKrS_BASE6u_C0MPL1C4TrD
+Possible flag AVX26VM_MOKrS_BASE6u_C0MPLJC4TrD
+Possible flag AVX26VM_M4KrS_B6SE6u_C0MPL1C4TrD
+Possible flag AVX26VM_M4KrS_B6SE6u_C0MPLJC4TrD
+Possible flag AVX26VM_M4KrS_BASE6u_C0MPL1C4TrD
+Possible flag AVX26VM_M4KrS_BASE6u_C0MPLJC4TrD
+Possible flag AVX2_VM_MOK3S_B6SE6u_CIMQ1JC4ErD
+Possible flag AVX2_VM_MOK3S_BASE6u_CIMQ1JC4ErD
+Possible flag AVX2_VM_M4K3S_BASE6u_CIMQ11C4ErD
+Possible flag AVX2_VM_M4K3S_BASE6u_CIMQ1JC4ErD
+Possible flag AVX2_VM_MOK3S_BASE6u_C0MQ1JC4ErD
+Possible flag AVX2_VM_M4K3S_BASE6u_C0MQ11C4ErD
+Possible flag AVX2_VM_M4K3S_BASE6u_C0MQ1JC4ErD
+Possible flag AVX2_VM_M4K3S_B6SE6u_CIMQ11C4ErD
+Possible flag AVX2_VM_M4K3S_B6SE6u_CIMQ1JC4ErD
+Possible flag AVX2_VM_MOK3S_B6SE6u_C0MQ1JC4ErD
+Possible flag AVX2_VM_M4K3S_B6SE6u_C0MQ11C4ErD
+Possible flag AVX2_VM_M4K3S_B6SE6u_C0MQ1JC4ErD
+Possible flag AVX2_VM_MOK3S_B6SE6u_CIMQ1JC4TrD
+Possible flag AVX2_VM_M4K3S_B6SE6u_CIMQ1JC4TrD
+Possible flag AVX2_VM_M4K3S_B6SE6u_C0MQ1JC4TrD
+Possible flag AVX2_VM_MOK3S_B6SE6u_CIMPL1C4ErD
+Possible flag AVX2_VM_MOK3S_B6SE6u_CIMPLJC4ErD
+Possible flag AVX2_VM_M4K3S_B6SE6u_CIMPL1C4ErD
+Possible flag AVX2_VM_M4K3S_B6SE6u_CIMPLJC4ErD
+Possible flag AVX2_VM_MOK3S_B6SE6u_C0MPL1C4ErD
+Possible flag AVX2_VM_MOK3S_B6SE6u_C0MPLJC4ErD
+Possible flag AVX2_VM_M4K3S_B6SE6u_C0MPL1C4ErD
+Possible flag AVX2_VM_M4K3S_B6SE6u_C0MPLJC4ErD
+Possible flag AVX2_VM_MOK3S_B6SE6u_CIMPL1C4TrD
+Possible flag AVX2_VM_MOK3S_B6SE6u_CIMPLJC4TrD
+Possible flag AVX2_VM_M4K3S_B6SE6u_CIMPL1C4TrD
+Possible flag AVX2_VM_M4K3S_B6SE6u_CIMPLJC4TrD
+Possible flag AVX2_VM_MOK3S_B6SE6u_C0MPL1C4TrD
+Possible flag AVX2_VM_MOK3S_B6SE6u_C0MPLJC4TrD
+Possible flag AVX2_VM_M4K3S_B6SE6u_C0MPL1C4TrD
+Possible flag AVX2_VM_M4K3S_B6SE6u_C0MPLJC4TrD
+Possible flag AVX2_VM_MOK3S_BASE6u_CIMPL1C4ErD
+Possible flag AVX2_VM_MOK3S_BASE6u_CIMPLJC4ErD
+Possible flag AVX2_VM_M4K3S_BASE6u_CIMPL1C4ErD
+Possible flag AVX2_VM_M4K3S_BASE6u_CIMPLJC4ErD
+Possible flag AVX2_VM_MOK3S_BASE6u_C0MPL1C4ErD
+Possible flag AVX2_VM_MOK3S_BASE6u_C0MPLJC4ErD
+Possible flag AVX2_VM_M4K3S_BASE6u_C0MPL1C4ErD
+Possible flag AVX2_VM_M4K3S_BASE6u_C0MPLJC4ErD
+Possible flag AVX2_VM_MOK3S_BASE6u_CIMPL1C4TrD
+Possible flag AVX2_VM_M4K3S_BASE6u_CIMPL1C4TrD
+Possible flag AVX2_VM_M4K3S_BASE6u_CIMPLJC4TrD
+Possible flag AVX2_VM_MOK3S_BASE6u_C0MPL1C4TrD
+Possible flag AVX2_VM_M4K3S_BASE6u_C0MPL1C4TrD
+Possible flag AVX2_VM_M4K3S_BASE6u_C0MPLJC4TrD
+Possible flag AVX2_VM_MOK3S_B6SE6u_CIMQ1JC4E3D
+Possible flag AVX2_VM_M4K3S_B6SE6u_CIMQ11C4E3D
+Possible flag AVX2_VM_M4K3S_B6SE6u_CIMQ1JC4E3D
+Possible flag AVX2_VM_MOK3S_B6SE6u_C0MQ1JC4E3D
+Possible flag AVX2_VM_M4K3S_B6SE6u_C0MQ11C4E3D
+Possible flag AVX2_VM_M4K3S_B6SE6u_C0MQ1JC4E3D
+Possible flag AVX2_VM_MOK3S_B6SE6u_CIMQ1JC4T3D
+Possible flag AVX2_VM_M4K3S_B6SE6u_CIMQ1JC4T3D
+Possible flag AVX2_VM_MOK3S_B6SE6u_C0MQ1JC4T3D
+Possible flag AVX2_VM_M4K3S_B6SE6u_C0MQ1JC4T3D
+Possible flag AVX2_VM_MOK3S_BASE6u_CIMQ1JC4E3D
+Possible flag AVX2_VM_M4K3S_BASE6u_CIMQ11C4E3D
+Possible flag AVX2_VM_M4K3S_BASE6u_CIMQ1JC4E3D
+Possible flag AVX2_VM_MOK3S_BASE6u_C0MQ1JC4E3D
+Possible flag AVX2_VM_M4K3S_BASE6u_C0MQ11C4E3D
+Possible flag AVX26VM_M4K3S_B6SE6u_CIMQ11C4ErD
+Possible flag AVX26VM_M4K3S_B6SE6u_C0MQ11C4ErD
+Possible flag AVX26VM_M4K3S_BASE6u_CIMQ11C4ErD
+Possible flag AVX26VM_M4K3S_BASE6u_C0MQ11C4ErD
+Possible flag AVX26VM_M4K3S_B6SE6u_CIMQ11C4E3D
+Possible flag AVX26VM_M4K3S_B6SE6u_C0MQ11C4E3D
+Possible flag AVX26VM_M4K3S_BASE6u_CIMQ11C4E3D
+Possible flag AVX26VM_M4K3S_BASE6u_C0MQ11C4E3D
+Possible flag AVX2_VM_M4K3S_BASE6u_C0MQ1JC4E3D
+Possible flag AVX26VM_M4K3S_B6SE6u_CIMQ1JC4ErD
+Possible flag AVX26VM_M4K3S_B6SE6u_C0MQ1JC4ErD
+Possible flag AVX26VM_M4K3S_B6SE6u_CIMQ1JC4TrD
+Possible flag AVX26VM_M4K3S_B6SE6u_C0MQ1JC4TrD
+Possible flag AVX26VM_M4K3S_BASE6u_CIMQ1JC4ErD
+Possible flag AVX26VM_M4K3S_BASE6u_C0MQ1JC4ErD
+Possible flag AVX26VM_M4K3S_B6SE6u_CIMQ1JC4E3D
+Possible flag AVX26VM_M4K3S_B6SE6u_C0MQ1JC4E3D
+Possible flag AVX26VM_M4K3S_B6SE6u_CIMQ1JC4T3D
+Possible flag AVX26VM_M4K3S_B6SE6u_C0MQ1JC4T3D
+Possible flag AVX26VM_M4K3S_BASE6u_CIMQ1JC4E3D
+Possible flag AVX26VM_M4K3S_BASE6u_C0MQ1JC4E3D
+Possible flag AVX26VM_MOK3S_B6SE6u_CIMQ11C4ErD
+Possible flag AVX26VM_MOK3S_B6SE6u_C0MQ11C4ErD
+Possible flag AVX26VM_MOK3S_BASE6u_CIMQ11C4ErD
+Possible flag AVX26VM_MOK3S_BASE6u_C0MQ11C4ErD
+Possible flag AVX26VM_MOK3S_B6SE6u_CIMQ11C4E3D
+Possible flag AVX26VM_MOK3S_B6SE6u_C0MQ11C4E3D
+Possible flag AVX26VM_MOK3S_BASE6u_CIMQ11C4E3D
+Possible flag AVX26VM_MOK3S_BASE6u_C0MQ11C4E3D
+Possible flag AVX26VM_MOK3S_B6SE6u_C0MQ1JC4ErD
+Possible flag AVX26VM_MOK3S_B6SE6u_C0MQ1JC4TrD
+Possible flag AVX26VM_MOK3S_BASE6u_C0MQ1JC4ErD
+Possible flag AVX26VM_MOK3S_B6SE6u_C0MQ1JC4E3D
+Possible flag AVX26VM_MOK3S_B6SE6u_C0MQ1JC4T3D
+Possible flag AVX26VM_MOK3S_BASE6u_C0MQ1JC4E3D
+Possible flag AVX26VM_MOK3S_B6SE6u_C0MPL1C4ErD
+Possible flag AVX26VM_MOK3S_B6SE6u_C0MPLJC4ErD
+Possible flag AVX26VM_M4K3S_B6SE6u_C0MPL1C4ErD
+Possible flag AVX26VM_M4K3S_B6SE6u_C0MPLJC4ErD
+Possible flag AVX2_VM_MOK3S_B6SE6u_C0MPL1C4E3D
+Possible flag AVX2_VM_MOK3S_B6SE6u_C0MPLJC4E3D
+Possible flag AVX2_VM_M4K3S_B6SE6u_C0MPL1C4E3D
+Possible flag AVX2_VM_M4K3S_B6SE6u_C0MPLJC4E3D
+Possible flag AVX26VM_MOK3S_B6SE6u_C0MPL1C4TrD
+Possible flag AVX26VM_MOK3S_B6SE6u_C0MPLJC4TrD
+Possible flag AVX26VM_M4K3S_B6SE6u_C0MPL1C4TrD
+Possible flag AVX26VM_M4K3S_B6SE6u_C0MPLJC4TrD
+Possible flag AVX2_VM_MOK3S_B6SE6u_C0MPL1C4T3D
+Possible flag AVX26VM_MOK3S_B6SE6u_C0MPL1C4T3D
+Possible flag AVX26VM_MOK3S_B6SE6u_C0MPLJC4T3D
+Possible flag AVX26VM_M4K3S_B6SE6u_C0MPL1C4T3D
+Possible flag AVX26VM_M4K3S_B6SE6u_C0MPLJC4T3D
+Possible flag AVX26VM_MOK3S_BASE6u_C0MPL1C4ErD
+Possible flag AVX26VM_MOK3S_BASE6u_C0MPLJC4ErD
+Possible flag AVX26VM_M4K3S_BASE6u_C0MPL1C4ErD
+Possible flag AVX26VM_M4K3S_BASE6u_C0MPLJC4ErD
+Possible flag AVX26VM_MOK3S_BASE6u_C0MPL1C4TrD
+Possible flag AVX26VM_MOK3S_BASE6u_C0MPLJC4TrD
+Possible flag AVX26VM_M4K3S_BASE6u_C0MPL1C4TrD
+Possible flag AVX26VM_M4K3S_BASE6u_C0MPLJC4TrD
+Possible flag AVX26VM_MOK3S_BASE6u_C0MPL1C4T3D
+Possible flag AVX26VM_MOK3S_BASE6u_C0MPLJC4T3D
+Possible flag AVX26VM_M4K3S_BASE6u_C0MPL1C4T3D
+Possible flag AVX26VM_M4K3S_BASE6u_C0MPLJC4T3D
+Possible flag AVX26VM_MOK3S_B6SE64_C0MQ1JC4ErD
+Possible flag AVX26VM_MOK3S_B6SE64_C0MQ1JC4E3D
+Possible flag AVX26VM_MOK3S_B6SE64_C0MPLJC4ErD
+Possible flag AVX26VM_M4K3S_B6SE64_C0MQ11C4ErD
+Possible flag AVX26VM_M4K3S_B6SE64_C0MQ11C4E3D
+Possible flag AVX26VM_M4K3S_B6SE64_C0MPL1C4ErD
+Possible flag AVX26VM_M4K3S_B6SE64_C0MQ1JC4ErD
+Possible flag AVX26VM_M4K3S_B6SE64_C0MQ1JC4E3D
+Possible flag AVX26VM_M4K3S_B6SE64_C0MPLJC4ErD
+Possible flag AVX26VM_MOKrS_B6SE64_C0MPL1C4TrD
+Possible flag AVX26VM_MOK3S_B6SE64_C0MPL1C4TrD
+Possible flag AVX26VM_MOKrS_B6SE64_C0MQ1JC4TrD
+Possible flag AVX26VM_MOKrS_B6SE64_C0MPLJC4TrD
+Possible flag AVX26VM_MOK3S_B6SE64_C0MQ1JC4TrD
+Possible flag AVX26VM_MOK3S_B6SE64_C0MQ1JC4T3D
+Possible flag AVX26VM_MOK3S_B6SE64_C0MPLJC4TrD
+Possible flag AVX26VM_M4KrS_B6SE64_C0MPL1C4TrD
+Possible flag AVX26VM_M4K3S_B6SE64_C0MQ11C4TrD
+Possible flag AVX26VM_M4K3S_B6SE64_C0MQ11C4T3D
+Possible flag AVX26VM_M4K3S_B6SE64_C0MPL1C4TrD
+Possible flag AVX26VM_M4KrS_B6SE64_C0MQ1JC4TrD
+Possible flag AVX26VM_M4KrS_B6SE64_C0MPLJC4TrD
+Possible flag AVX26VM_M4K3S_B6SE64_C0MQ1JC4TrD
+Possible flag AVX26VM_M4K3S_B6SE64_C0MQ1JC4T3D
+Possible flag AVX26VM_M4K3S_B6SE64_C0MPLJC4TrD
+Possible flag AVX26VM_MOKrS_BASE64_C0MQ11C4ErD
+Possible flag AVX26VM_MOKrS_BASE64_C0MPL1C4ErD
+Possible flag AVX26VM_MOK3S_BASE64_C0MQ11C4ErD
+Possible flag AVX26VM_MOK3S_BASE64_C0MQ11C4E3D
+Possible flag AVX26VM_MOK3S_BASE64_C0MPL1C4ErD
+Possible flag AVX26VM_MOKrS_BASE64_C0MPLJC4ErD
+Possible flag AVX26VM_M4KrS_BASE64_C0MPL1C4ErD
+Possible flag AVX26VM_M4KrS_BASE64_C0MQ11C4ErD
+Possible flag AVX26VM_M4K3S_BASE64_C0MQ11C4ErD
+Possible flag AVX26VM_M4K3S_BASE64_C0MQ11C4E3D
+Possible flag AVX26VM_M4K3S_BASE64_C0MPL1C4ErD
+Possible flag AVX26VM_M4KrS_BASE64_C0MPLJC4ErD
+Possible flag AVX26VM_M4K3S_BASE64_C0MQ1JC4ErD
+Possible flag AVX26VM_M4K3S_BASE64_C0MQ1JC4E3D
+Possible flag AVX26VM_M4K3S_BASE64_C0MPLJC4ErD
+Possible flag AVX26VM_MOK3S_BASE64_C0MQ1JC4ErD
+Possible flag AVX26VM_MOK3S_BASE64_C0MQ1JC4E3D
+Possible flag AVX26VM_MOK3S_BASE64_C0MPLJC4ErD
+Possible flag AVX26VM_MOKrS_BASE64_C0MPL1C4TrD
+Possible flag AVX26VM_MOK3S_BASE64_C0MPL1C4TrD
+Possible flag AVX26VM_MOK3S_BASE64_C0MPLJC4TrD
+Possible flag AVX26VM_M4K3S_BASE64_C0MPL1C4TrD
+Possible flag AVX26VM_M4K3S_BASE64_C0MPLJC4TrD
+Possible flag AVX26VM_MOK3S_B6SE6u_CIMPL1C4ErD
+Possible flag AVX26VM_MOK3S_B6SE64_CIMPL1C4ErD
+Possible flag AVX26VM_MOK3S_B6SE6u_CIMQ1JC4ErD
+Possible flag AVX26VM_MOK3S_B6SE6u_CIMQ1JC4E3D
+Possible flag AVX26VM_MOK3S_B6SE64_CIMQ1JC4ErD
+Possible flag AVX26VM_MOK3S_B6SE64_CIMQ1JC4E3D
+Possible flag AVX26VM_MOK3S_B6SE6u_CIMPLJC4ErD
+Possible flag AVX26VM_MOK3S_B6SE64_CIMPLJC4ErD
+Possible flag AVX26VM_M4K3S_B6SE64_CIMQ11C4ErD
+Possible flag AVX26VM_M4K3S_B6SE64_CIMQ11C4E3D
+Possible flag AVX26VM_M4K3S_B6SE6u_CIMPL1C4ErD
+Possible flag AVX26VM_M4K3S_B6SE64_CIMPL1C4ErD
+Possible flag AVX26VM_M4K3S_B6SE64_CIMQ1JC4ErD
+Possible flag AVX26VM_M4K3S_B6SE64_CIMQ1JC4E3D
+Possible flag AVX26VM_M4K3S_B6SE6u_CIMPLJC4ErD
+Possible flag AVX26VM_M4K3S_B6SE64_CIMPLJC4ErD
+Possible flag AVX26VM_MOKrS_BASE64_CIMQ11C4ErD
+Possible flag AVX26VM_MOK3S_BASE64_CIMQ11C4ErD
+Possible flag AVX26VM_MOK3S_BASE64_CIMQ11C4E3D
+Possible flag AVX26VM_MOKrS_BASE64_CIMPL1C4ErD
+Possible flag AVX26VM_MOK3S_BASE6u_CIMPL1C4ErD
+Possible flag AVX26VM_MOK3S_BASE64_CIMPL1C4ErD
+Possible flag AVX26VM_MOKrS_BASE64_CIMQ1JC4ErD
+Possible flag AVX26VM_MOK3S_BASE6u_CIMQ1JC4ErD
+Possible flag AVX26VM_MOK3S_BASE6u_CIMQ1JC4E3D
+Possible flag AVX26VM_MOK3S_BASE64_CIMQ1JC4ErD
+Possible flag AVX26VM_MOK3S_BASE64_CIMQ1JC4E3D
+Possible flag AVX26VM_MOKrS_BASE64_CIMPLJC4ErD
+Possible flag AVX26VM_MOK3S_BASE6u_CIMPLJC4ErD
+Possible flag AVX26VM_MOK3S_BASE64_CIMPLJC4ErD
+Possible flag AVX26VM_M4KrS_BASE64_CIMQ11C4ErD
+Possible flag AVX26VM_M4K3S_BASE64_CIMQ11C4ErD
+Possible flag AVX26VM_M4K3S_BASE64_CIMQ1JC4ErD
+Possible flag AVX26VM_MOK3S_B6SE6u_CIMQ1JC4TrD
+Possible flag AVX26VM_MOK3S_B6SE64_CIMQ1JC4TrD
+Possible flag AVX26VM_M4K3S_B6SE64_CIMQ1JC4TrD
+Possible flag AVX26VM_M4K3S_BASE64_CIMQ11C4E3D
+Possible flag AVX26VM_M4K3S_BASE64_CIMQ1JC4E3D
+Possible flag AVX26VM_MOK3S_B6SE6u_CIMQ1JC4T3D
+Possible flag AVX26VM_MOKrS_B6SE64_CIMQ1JC4TrD
+Possible flag AVX26VM_MOK3S_B6SE64_CIMQ1JC4T3D
+Possible flag AVX26VM_M4K3S_B6SE64_CIMQ11C4T3D
+Possible flag AVX26VM_M4K3S_B6SE64_CIMQ1JC4T3D
+Possible flag AVX26VM_M4KrS_BASE64_CIMQ1JC4ErD
+Possible flag AVX26VM_M4KrS_B6SE64_CIMQ1JC4TrD
+Possible flag AVX26VM_M4KrS_BASE64_CIMPL1C4ErD
+Possible flag AVX26VM_M4KrS_BASE64_CIMPLJC4ErD
+Possible flag AVX26VM_MOKrS_B6SE64_CIMPL1C4TrD
+Possible flag AVX26VM_MOKrS_B6SE64_CIMPLJC4TrD
+Possible flag AVX26VM_M4KrS_B6SE64_CIMPLJC4TrD
+Possible flag AVX26VM_MOKrS_BASE64_CIMPL1C4TrD
+Possible flag AVX26VM_MOKrS_BASE64_CIMPLJC4TrD
+Possible flag AVX26VM_M4KrS_BASE64_CIMPL1C4TrD
+Possible flag AVX26VM_M4KrS_BASE64_CIMPLJC4TrD
+Possible flag AVX26VM_MOKrS_BASE64_C0MPLJC4TrD
+Possible flag AVX26VM_M4KrS_BASE64_C0MPL1C4TrD
+Possible flag AVX26VM_M4KrS_BASE64_C0MPLJC4TrD
+Possible flag AVX26VM_M4K3S_BASE6u_CIMPL1C4ErD
+Possible flag AVX26VM_M4K3S_BASE64_CIMPL1C4ErD
+Possible flag AVX26VM_M4K3S_BASE6u_CIMPLJC4ErD
+Possible flag AVX26VM_M4K3S_BASE64_CIMPLJC4ErD
+Possible flag AVX26VM_MOK3S_B6SE6u_CIMPLJC4TrD
+Possible flag AVX26VM_MOK3S_B6SE64_CIMPLJC4TrD
+Possible flag AVX26VM_M4K3S_B6SE6u_CIMPLJC4TrD
+Possible flag AVX26VM_M4K3S_B6SE64_CIMPLJC4TrD
+Possible flag AVX26VM_M4K3S_B6SE6u_CIMPLJC4T3D
+Possible flag AVX26VM_MOK3S_BASE6u_CIMPL1C4TrD
+Possible flag AVX26VM_MOK3S_BASE64_CIMPL1C4TrD
+Possible flag AVX26VM_MOK3S_BASE6u_CIMPLJC4TrD
+Possible flag AVX26VM_MOK3S_BASE64_CIMPLJC4TrD
+Possible flag AVX26VM_M4K3S_BASE6u_CIMPL1C4TrD
+Possible flag AVX26VM_M4K3S_BASE64_CIMPL1C4TrD
+Possible flag AVX26VM_M4K3S_BASE6u_CIMPLJC4TrD
+Possible flag AVX26VM_M4K3S_BASE64_CIMPLJC4TrD
+Possible flag AVX26VM_MOK3S_BASE6u_CIMPL1C4T3D
+Possible flag AVX26VM_MOK3S_BASE6u_CIMPLJC4T3D
+Possible flag AVX26VM_M4K3S_BASE6u_CIMPL1C4T3D
+Possible flag AVX26VM_M4K3S_BASE6u_CIMPLJC4T3D
+Possible flag AVX2_VM_MOKrS_B6SE64_CIMQ1JC4TrD
+Possible flag AVX2_VM_M4KrS_B6SE64_CIMQ1JC4TrD
+Possible flag AVX2_VM_MOKrS_B6SE64_CIMQ1JC4T3D
+Possible flag AVX2_VM_M4KrS_B6SE64_CIMQ1JC4T3D
+Possible flag AVX2_VM_MOK3S_B6SE64_CIMQ11C4ErD
+Possible flag AVX2_VM_MOK3S_B6SE64_CIMQ1JC4ErD
+Possible flag AVX2_VM_M4K3S_B6SE64_CIMQ11C4ErD
+Possible flag AVX2_VM_M4K3S_B6SE64_CIMQ1JC4ErD
+Possible flag AVX2_VM_MOK3S_B6SE64_CIMQ11C4E3D
+Possible flag AVX2_VM_MOK3S_B6SE64_CIMQ1JC4E3D
+Possible flag AVX2_VM_M4K3S_B6SE64_CIMQ11C4E3D
+Possible flag AVX2_VM_M4K3S_B6SE64_CIMQ1JC4E3D
+Possible flag AVX2_VM_MOK3S_BASE64_CIMQ11C4ErD
+Possible flag AVX2_VM_MOK3S_BASE64_CIMQ1JC4ErD
+Possible flag AVX2_VM_M4K3S_BASE64_CIMQ11C4ErD
+Possible flag AVX2_VM_M4K3S_BASE64_CIMQ1JC4ErD
+Possible flag AVX2_VM_MOK3S_BASE64_CIMQ11C4E3D
+Possible flag AVX2_VM_MOK3S_BASE64_CIMQ1JC4E3D
+Possible flag AVX2_VM_M4K3S_BASE64_CIMQ11C4E3D
+Possible flag AVX2_VM_M4K3S_BASE64_CIMQ1JC4E3D
+Possible flag AVX2_VM_MOK3S_B6SE64_CIMQ1JC4TrD
+Possible flag AVX2_VM_M4K3S_B6SE64_CIMQ1JC4TrD
+Possible flag AVX2_VM_MOK3S_B6SE64_CIMQ11C4T3D
+Possible flag AVX2_VM_MOK3S_B6SE64_CIMQ1JC4T3D
+Possible flag AVX2_VM_M4K3S_B6SE64_CIMQ11C4T3D
+Possible flag AVX2_VM_M4K3S_B6SE64_CIMQ1JC4T3D
+Possible flag AVX2_VM_MOK3S_B6SE64_C0MQ11C4ErD
+Possible flag AVX2_VM_MOK3S_B6SE64_C0MQ1JC4ErD
+Possible flag AVX2_VM_M4K3S_B6SE64_C0MQ11C4ErD
+Possible flag AVX2_VM_M4K3S_B6SE64_C0MQ1JC4ErD
+Possible flag AVX2_VM_MOK3S_B6SE64_C0MQ11C4E3D
+Possible flag AVX2_VM_MOK3S_B6SE64_C0MQ1JC4E3D
+Possible flag AVX2_VM_M4K3S_B6SE64_C0MQ11C4E3D
+Possible flag AVX2_VM_M4K3S_B6SE64_C0MQ1JC4E3D
+Possible flag AVX2_VM_MOK3S_BASE64_C0MQ11C4ErD
+Possible flag AVX2_VM_MOK3S_BASE64_C0MQ1JC4ErD
+Possible flag AVX2_VM_M4K3S_BASE64_C0MQ11C4ErD
+Possible flag AVX2_VM_M4K3S_BASE64_C0MQ1JC4ErD
+Possible flag AVX2_VM_MOK3S_BASE64_C0MQ11C4E3D
+Possible flag AVX2_VM_MOK3S_BASE64_C0MQ1JC4E3D
+Possible flag AVX2_VM_M4K3S_BASE64_C0MQ11C4E3D
+Possible flag AVX2_VM_M4K3S_BASE64_C0MQ1JC4E3D
+Possible flag AVX2_VM_MOK3S_B6SE64_C0MQ1JC4TrD
+Possible flag AVX2_VM_M4K3S_B6SE64_C0MQ1JC4TrD
+Possible flag AVX2_VM_MOK3S_B6SE64_C0MQ11C4T3D
+Possible flag AVX2_VM_MOK3S_B6SE64_C0MQ1JC4T3D
+Possible flag AVX2_VM_M4K3S_B6SE64_C0MQ11C4T3D
+Possible flag AVX2_VM_M4K3S_B6SE64_C0MQ1JC4T3D
+Possible flag AVX2_VM_MOKrS_BASE64_CIMPL1C4ErD
+Possible flag AVX2_VM_MOKrS_BASE64_CIMPLJC4ErD
+Possible flag AVX2_VM_M4KrS_BASE64_CIMPL1C4ErD
+Possible flag AVX2_VM_M4KrS_BASE64_CIMPLJC4ErD
+Possible flag AVX2_VM_MOKrS_BASE64_CIMPL1C4TrD
+Possible flag AVX2_VM_M4KrS_BASE64_CIMPL1C4TrD
+Possible flag AVX2_VM_M4KrS_BASE64_CIMPLJC4TrD
+Possible flag AVX2_VM_MOK3S_B6SE64_CIMPL1C4ErD
+Possible flag AVX2_VM_MOK3S_B6SE64_CIMPLJC4ErD
+Possible flag AVX2_VM_M4K3S_B6SE64_CIMPL1C4ErD
+Possible flag AVX2_VM_M4K3S_B6SE64_CIMPLJC4ErD
+Possible flag AVX2_VM_MOK3S_B6SE6u_CIMPL1C4E3D
+Possible flag AVX2_VM_MOK3S_B6SE64_CIMPL1C4E3D
+Possible flag AVX2_VM_MOK3S_B6SE6u_CIMPLJC4E3D
+Possible flag AVX2_VM_MOK3S_B6SE64_CIMPLJC4E3D
+Possible flag AVX2_VM_M4K3S_B6SE6u_CIMPL1C4E3D
+Possible flag AVX2_VM_M4K3S_B6SE64_CIMPL1C4E3D
+Possible flag AVX2_VM_M4K3S_B6SE6u_CIMPLJC4E3D
+Possible flag AVX2_VM_M4K3S_B6SE64_CIMPLJC4E3D
+Possible flag AVX2_VM_MOK3S_BASE64_CIMPL1C4ErD
+Possible flag AVX2_VM_MOK3S_BASE64_CIMPLJC4ErD
+Possible flag AVX2_VM_M4K3S_BASE64_CIMPL1C4ErD
+Possible flag AVX2_VM_M4K3S_BASE64_CIMPLJC4ErD
+Possible flag AVX2_VM_MOK3S_BASE6u_CIMPL1C4E3D
+Possible flag AVX2_VM_MOK3S_BASE64_CIMPL1C4E3D
+Possible flag AVX2_VM_MOK3S_BASE6u_CIMPLJC4E3D
+Possible flag AVX2_VM_MOK3S_BASE64_CIMPLJC4E3D
+Possible flag AVX2_VM_M4K3S_BASE6u_CIMPL1C4E3D
+Possible flag AVX2_VM_M4K3S_BASE64_CIMPL1C4E3D
+Possible flag AVX2_VM_M4K3S_BASE6u_CIMPLJC4E3D
+Possible flag AVX2_VM_M4K3S_BASE64_CIMPLJC4E3D
+Possible flag AVX2_VM_MOK3S_B6SE64_CIMPL1C4TrD
+Possible flag AVX2_VM_MOK3S_B6SE64_CIMPLJC4TrD
+Possible flag AVX2_VM_M4K3S_B6SE64_CIMPL1C4TrD
+Possible flag AVX2_VM_M4K3S_B6SE64_CIMPLJC4TrD
+Possible flag AVX2_VM_MOK3S_B6SE6u_CIMPL1C4T3D
+Possible flag AVX2_VM_MOK3S_B6SE64_CIMPL1C4T3D
+Possible flag AVX2_VM_MOK3S_B6SE6u_CIMPLJC4T3D
+Possible flag AVX2_VM_MOK3S_B6SE64_CIMPLJC4T3D
+Possible flag AVX2_VM_M4K3S_B6SE6u_CIMPL1C4T3D
+Possible flag AVX2_VM_M4K3S_B6SE64_CIMPL1C4T3D
+Possible flag AVX2_VM_M4K3S_B6SE6u_CIMPLJC4T3D
+Possible flag AVX2_VM_M4K3S_B6SE64_CIMPLJC4T3D
+Possible flag AVX2_VM_MOK3S_BASE64_CIMPL1C4TrD
+Possible flag AVX2_VM_M4K3S_BASE64_CIMPL1C4TrD
+Possible flag AVX2_VM_M4K3S_BASE64_CIMPLJC4TrD
+Possible flag AVX2_VM_MOK3S_BASE6u_CIMPL1C4T3D
+Possible flag AVX2_VM_MOK3S_BASE64_CIMPL1C4T3D
+Possible flag AVX2_VM_M4K3S_BASE6u_CIMPL1C4T3D
+Possible flag AVX2_VM_M4K3S_BASE64_CIMPL1C4T3D
+Possible flag AVX2_VM_M4K3S_BASE6u_CIMPLJC4T3D
+Possible flag AVX2_VM_M4K3S_BASE64_CIMPLJC4T3D
+Possible flag AVX2_VM_MOK3S_B6SE64_C0MPL1C4ErD
+Possible flag AVX2_VM_MOK3S_B6SE64_C0MPLJC4ErD
+Possible flag AVX2_VM_M4K3S_B6SE64_C0MPL1C4ErD
+Possible flag AVX2_VM_M4K3S_B6SE64_C0MPLJC4ErD
+Possible flag AVX2_VM_MOK3S_B6SE64_C0MPL1C4E3D
+Possible flag AVX2_VM_MOK3S_B6SE64_C0MPLJC4E3D
+Possible flag AVX2_VM_M4K3S_B6SE64_C0MPL1C4E3D
+Possible flag AVX2_VM_M4K3S_B6SE64_C0MPLJC4E3D
+Possible flag AVX2_VM_MOK3S_BASE64_C0MPL1C4ErD
+Possible flag AVX2_VM_MOK3S_BASE64_C0MPLJC4ErD
+Possible flag AVX2_VM_M4K3S_BASE64_C0MPL1C4ErD
+Possible flag AVX2_VM_M4K3S_BASE64_C0MPLJC4ErD
+Possible flag AVX2_VM_MOK3S_BASE6u_C0MPL1C4E3D
+Possible flag AVX2_VM_MOK3S_BASE64_C0MPL1C4E3D
+Possible flag AVX2_VM_MOK3S_BASE6u_C0MPLJC4E3D
+Possible flag AVX2_VM_MOK3S_BASE64_C0MPLJC4E3D
+Possible flag AVX2_VM_M4K3S_BASE6u_C0MPL1C4E3D
+Possible flag AVX2_VM_M4K3S_BASE64_C0MPL1C4E3D
+Possible flag AVX2_VM_M4K3S_BASE6u_C0MPLJC4E3D
+Possible flag AVX2_VM_M4K3S_BASE64_C0MPLJC4E3D
+Possible flag AVX2_VM_MOK3S_B6SE64_C0MPL1C4TrD
+Possible flag AVX2_VM_MOK3S_B6SE64_C0MPLJC4TrD
+Possible flag AVX2_VM_M4K3S_B6SE64_C0MPL1C4TrD
+Possible flag AVX2_VM_M4K3S_B6SE64_C0MPLJC4TrD
+Possible flag AVX2_VM_MOK3S_B6SE64_C0MPL1C4T3D
+Possible flag AVX2_VM_MOK3S_B6SE6u_C0MPLJC4T3D
+Possible flag AVX2_VM_MOK3S_B6SE64_C0MPLJC4T3D
+Possible flag AVX2_VM_M4K3S_B6SE6u_C0MPL1C4T3D
+Possible flag AVX2_VM_M4K3S_B6SE64_C0MPL1C4T3D
+Possible flag AVX2_VM_M4K3S_B6SE6u_C0MPLJC4T3D
+Possible flag AVX2_VM_M4K3S_B6SE64_C0MPLJC4T3D
+Possible flag AVX2_VM_MOK3S_BASE64_C0MPL1C4TrD
+Possible flag AVX2_VM_M4K3S_BASE64_C0MPL1C4TrD
+Possible flag AVX2_VM_M4K3S_BASE64_C0MPLJC4TrD
+Possible flag AVX2_VM_MOK3S_BASE6u_C0MPL1C4T3D
+Possible flag AVX2_VM_MOK3S_BASE64_C0MPL1C4T3D
+Possible flag AVX2_VM_M4K3S_BASE6u_C0MPL1C4T3D
+Possible flag AVX2_VM_M4K3S_BASE64_C0MPL1C4T3D
+Possible flag AVX2_VM_M4K3S_BASE6u_C0MPLJC4T3D
+Possible flag AVX2_VM_M4K3S_BASE64_C0MPLJC4T3D
+
+Process finished with exit code 0
